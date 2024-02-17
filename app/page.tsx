@@ -31,13 +31,15 @@ function Hero() {
       width={150}
       alt="NextUI hero Image"
       src="/memoji-coding.png"
-    /></div>
+					/></div>
+				
 				<h1 className={title()}>I&apos;m a&nbsp;</h1>
 				<h1 className={title({ color: "violet" })}>Software Engineer&nbsp;</h1>
 				<br />
 				<h1 className={title()}>
 				 	available for internships.
-				</h1>
+					</h1>
+					
 				<h2 className={subtitle({ class: "mt-4" })}>
 				Crafting Beautiful, Fast, and Modern Applications.
 				</h2>
