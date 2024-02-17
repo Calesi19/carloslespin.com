@@ -2,8 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
-import { FaAws } from "react-icons/fa";
-import {SiAmazonaws, SiWordpress, SiGo, SiDjango, SiGit, SiFirebase, SiLinux, SiMarkdown, SiJavascript, SiSvelte, SiVim, SiReact, SiPython, SiPrisma, SiNodedotjs,SiExpress, SiDocker, SiTailwindcss, SiCplusplus, SiFlutter, SiPostgresql } from "react-icons/si";
+import { SiMongodb, SiAmazonaws, SiWordpress, SiGo, SiDjango, SiGit, SiFirebase, SiLinux, SiMarkdown, SiJavascript, SiSvelte, SiVim, SiReact, SiPython, SiPrisma, SiNodedotjs,SiExpress, SiDocker, SiTailwindcss, SiCplusplus, SiFlutter, SiPostgresql } from "react-icons/si";
 import { IconType } from "react-icons";
 
 
@@ -82,6 +81,7 @@ const LogoItemsTop = () => (
     <LogoItem Icon={SiMarkdown} />
     <LogoItem Icon={SiNodedotjs} />
     <LogoItem Icon={SiPython} />
+    <LogoItem Icon={SiMongodb} />
   </>
 );
 
