@@ -2,45 +2,8 @@
 
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
-import {
-  SiNike,
-  Si3M,
-  SiAbstract,
-  SiAdobe,
-  SiAirtable,
-  SiAmazon,
-  SiBox,
-  SiBytedance,
-  SiChase,
-  SiCloudbees,
-  SiBurton,
-  SiBmw,
-  SiHeroku,
-  SiBuildkite,
-  SiCouchbase,
-  SiDailymotion,
-  SiDeliveroo,
-  SiEpicgames,
-  SiGenius,
-  SiGodaddy,
-} from "react-icons/si";
-import {
-    DiBootstrap,
-    DiCss3,
-    DiDjango,
-    DiGit,
-    DiHtml5,
-    DiJavascript1,
-    DiLinux,
-    DiMarkdown,
-    DiNodejsSmall,
-    DiPython,
-    DiPostgresql,
-    DiReact,
-    DiVim,
-    DiDocker
-} from 'react-icons/di'
-
+import { FaAws } from "react-icons/fa";
+import {SiAmazonaws, SiWordpress, SiGo, SiDjango, SiGit, SiFirebase, SiLinux, SiMarkdown, SiJavascript, SiSvelte, SiVim, SiReact, SiPython, SiPrisma, SiNodedotjs,SiExpress, SiDocker, SiTailwindcss, SiCplusplus, SiFlutter, SiPostgresql } from "react-icons/si";
 import { IconType } from "react-icons";
 
 
@@ -109,31 +72,32 @@ const LogoItem = ({ Icon }: { Icon: IconType }) => {
 
 const LogoItemsTop = () => (
   <>
-    <LogoItem Icon={DiBootstrap} />
-    <LogoItem Icon={DiCss3} />
-    <LogoItem Icon={DiDjango} />
-    <LogoItem Icon={DiGit} />
-    <LogoItem Icon={DiHtml5} />
-    <LogoItem Icon={DiJavascript1} />
-    <LogoItem Icon={DiLinux} />
-    <LogoItem Icon={DiMarkdown} />
-    <LogoItem Icon={DiNodejsSmall} />
-    <LogoItem Icon={DiPython} />
+    <LogoItem Icon={SiFirebase} />
+    <LogoItem Icon={SiWordpress} />
+    <LogoItem Icon={SiDjango} />
+    <LogoItem Icon={SiGit} />
+    <LogoItem Icon={SiGo} />
+    <LogoItem Icon={SiJavascript} />
+    <LogoItem Icon={SiLinux} />
+    <LogoItem Icon={SiMarkdown} />
+    <LogoItem Icon={SiNodedotjs} />
+    <LogoItem Icon={SiPython} />
   </>
 );
 
 const LogoItemsBottom = () => (
   <>
-    <LogoItem Icon={DiPostgresql} />
-    <LogoItem Icon={DiReact} />
-    <LogoItem Icon={DiVim} />
-    <LogoItem Icon={DiDocker} />
-    
-    <LogoItem Icon={SiDeliveroo} />
-    <LogoItem Icon={SiEpicgames} />
-    <LogoItem Icon={SiGenius} />
-    <LogoItem Icon={SiGodaddy} />
-    <LogoItem Icon={SiHeroku} />
+    <LogoItem Icon={SiPostgresql} />
+    <LogoItem Icon={SiReact} />
+    <LogoItem Icon={SiVim} />
+    <LogoItem Icon={SiExpress} />
+    <LogoItem Icon={SiAmazonaws} />
+    <LogoItem Icon={SiTailwindcss} />
+    <LogoItem Icon={SiCplusplus} />
+    <LogoItem Icon={SiFlutter} />
+    <LogoItem Icon={SiDocker} />
+    <LogoItem Icon={SiPrisma} />
+    <LogoItem Icon={SiSvelte} />
   </>
 );
 

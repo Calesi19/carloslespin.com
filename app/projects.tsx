@@ -174,20 +174,20 @@ const items: ItemType[] = [
   },
   {
     id: 6,
-    url: "/imgs/computer/desk.png",
-    category: "Desks",
-    title: "Stand up straight",
+    url: "https://github.com/Calesi19/TypeSpace/blob/main/square.gif?raw=true",
+    category: "Game",
+    title: "TypeSpace",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "Typing game written in vanilla JavaScript.",
       link: "https://github.com/Calesi19/Timeshare-Pro-App"
   },
   {
     id: 7,
-    url: "/imgs/computer/headphones.png",
-    category: "Headphones",
-    title: "Sounds good",
+    url: "https://github.com/Calesi19/Chess/blob/main/demo.gif?raw=true",
+    category: "Game",
+    title: "Chess",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "Chess game written in C++.",
       link: "https://github.com/Calesi19/Timeshare-Pro-App"
   },
 ];
