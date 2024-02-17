@@ -42,8 +42,8 @@ const CardCarousel = () => {
   };
 
   return (
-    <section className="bg-slate-100" ref={ref}>
-      <div className="relative overflow-hidden p-4">
+    <section  ref={ref}>
+      <div className="relative overflow-hidden p-4 my-8">
         {/* CARDS */}
         <div className="mx-auto max-w-6xl">
           <p className="mb-4 text-2xl font-semibold">
@@ -127,10 +127,10 @@ const items: ItemType[] = [
   {
     id: 1,
     url: "https://github.com/Calesi19/Timeshare-Pro-App/blob/main/docs/1.png?raw=true",
-    category: "Mice",
+    category: "Mobile",
     title: "Timeshare Pro",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "Presentation tool for timeshare salesmen. Built with Flutter.",
   },
   {
     id: 2,

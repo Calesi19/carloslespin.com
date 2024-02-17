@@ -1,6 +1,7 @@
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code"
+import Image from "next/image";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
@@ -22,14 +23,22 @@ function Hero() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
 			<div className="inline-block max-w-lg text-center justify-center">
+				<div className=" flex items-center justify-center">
+					<Image
+						className="mb-4"
+						height={150}
+      width={150}
+      alt="NextUI hero Image"
+      src="/memoji-coding.png"
+    /></div>
 				<h1 className={title()}>I&apos;m a&nbsp;</h1>
 				<h1 className={title({ color: "violet" })}>Software Engineer&nbsp;</h1>
 				<br />
 				<h1 className={title()}>
-				 	Student currently searching for internships.
+				 	currently searching for internships.
 				</h1>
 				<h2 className={subtitle({ class: "mt-4" })}>
-					Beautiful, fast and modern React UI library.
+				Crafting Beautiful, Fast, and Modern Applications.
 				</h2>
 			</div>
 
@@ -39,7 +48,7 @@ function Hero() {
 					href={siteConfig.links.docs}
 					className={buttonStyles({ color: "primary", variant: "shadow" })}
 				>
-					Documentation
+					Contact Me
 				</Link>
 				<Link
 					isExternal
