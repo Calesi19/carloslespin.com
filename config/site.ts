@@ -19,37 +19,37 @@ export const siteConfig = {
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
-		},
-		{
-			label: "Dashboard",
-			href: "/dashboard",
+			label: "About",
+			href: "https://www.linkedin.com/in/calesi19/",
 		},
 		{
 			label: "Projects",
-			href: "/projects",
+			href: "#projects",
 		},
 		{
-			label: "Team",
-			href: "/team",
+			label: "Experience",
+			href: "#experience",
 		},
 		{
-			label: "Calendar",
-			href: "/calendar",
+			label: "Contact",
+			href: "#contact",
 		},
 		{
-			label: "Settings",
-			href: "/settings",
+			label: "LinkedIn",
+			href: "https://www.linkedin.com/in/calesi19/",
 		},
 		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
+			label: "GitHub",
+			href: "https://www.linkedin.com/in/calesi19/",
 		},
 		{
-			label: "Logout",
-			href: "/logout",
+			label: "LinkedIn",
+			href: "https://www.linkedin.com/in/calesi19/",
 		},
+		
+		
+		
+		
 	],
 	links: {
 		linkedin: "https://www.linkedin.com/in/calesi19/",
