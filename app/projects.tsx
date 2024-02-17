@@ -47,7 +47,7 @@ const CardCarousel = () => {
         {/* CARDS */}
         <div className="mx-auto max-w-6xl">
           <p className="mb-4 text-2xl font-semibold">
-            Projects. <span className="text-slate-500">From start to finish.</span>
+            Projects. <span className="text-slate-500">Check out on GitHub.</span>
           </p>
           <motion.div
             animate={{
@@ -89,8 +89,9 @@ const CardCarousel = () => {
   );
 };
 
-const Card = ({ url, category, title, description }: ItemType) => {
+const Card = ({ url, category, title, description, link }: ItemType) => {
   return (
+    <a href={link} target="_blank" rel="noreferrer"> 
     <div
       className="relative shrink-0 cursor-pointer rounded-2xl bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
       style={{
@@ -109,7 +110,8 @@ const Card = ({ url, category, title, description }: ItemType) => {
         <p className="my-2 text-3xl font-bold">{title}</p>
         <p className="text-lg text-slate-300">{description}</p>
       </div>
-    </div>
+      </div>
+      </a>
   );
 };
 
@@ -121,6 +123,7 @@ type ItemType = {
   category: string;
   title: string;
   description: string;
+  link: string;
 };
 
 const items: ItemType[] = [
@@ -131,6 +134,7 @@ const items: ItemType[] = [
     title: "Timeshare Pro",
     description:
       "Presentation tool for timeshare salesmen. Built with Flutter.",
+    link: "https://github.com/Calesi19/Timeshare-Pro-App"
   },
   {
     id: 2,
@@ -139,6 +143,7 @@ const items: ItemType[] = [
     title: "Library System",
     description:
       "A Django API for information of temples worldwide. Containerized using Docker.",
+      link: "https://github.com/Calesi19/Timeshare-Pro-App"
   },
   {
     id: 3,
@@ -147,22 +152,25 @@ const items: ItemType[] = [
     title: "Library System",
     description:
       "MySQL model of a library system with schema and data.",
+      link: "https://github.com/Calesi19/Timeshare-Pro-App"
   },
   {
     id: 4,
-    url: "https://github.com/Calesi19/TypeSwift/blob/main/docs/square.png?raw=true",
+    url: "https://github.com/Calesi19/TypeSwift/blob/main/docs/square.jpg?raw=true",
     category: "Desktop",
     title: "TypeSwift",
     description:
       "A compact text-expander for creating shortcuts to reduce typing time.",
+      link: "https://github.com/Calesi19/Timeshare-Pro-App"
   },
   {
     id: 5,
-    url: "/imgs/computer/lights.png",
-    category: "Lights",
-    title: "It's lit",
+    url: "https://github.com/Calesi19/LockerHub/blob/main/doc/square.png?raw=true",
+    category: "Mobile",
+    title: "LockerHub",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "Allows for locker rental transactions and also enables users to securely access their rented lockers. Built with Flutter.",
+      link: "https://github.com/Calesi19/Timeshare-Pro-App"
   },
   {
     id: 6,
@@ -171,6 +179,7 @@ const items: ItemType[] = [
     title: "Stand up straight",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      link: "https://github.com/Calesi19/Timeshare-Pro-App"
   },
   {
     id: 7,
@@ -179,5 +188,6 @@ const items: ItemType[] = [
     title: "Sounds good",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      link: "https://github.com/Calesi19/Timeshare-Pro-App"
   },
 ];
