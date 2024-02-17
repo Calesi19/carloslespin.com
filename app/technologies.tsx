@@ -100,7 +100,7 @@ const LogoItem = ({ Icon }: { Icon: IconType }) => {
       rel="nofollow"
       target="_blank"
           className="w-16 md:w-24 h-16 md:h-24 flex justify-center items-center hover:bg-slate-200 text-white transition-colors"
-          style={{ color: theme === "dark" ? "white" : "black" }} // Change the color based on the theme
+          style={{ color: theme === "light" ? "black" : "white" }} // Change the color based on the theme
     >
       <Icon className="text-4xl md:text-5xl" />
     </a>

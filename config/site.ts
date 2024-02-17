@@ -52,6 +52,7 @@ export const siteConfig = {
 		},
 	],
 	links: {
+		linkedin: "https://www.linkedin.com/in/calesi19/",
 		github: "https://github.com/Calesi19",
 		docs: "https://nextui.org",
 		discord: "https://discordapp.com/users/618249435385692160",

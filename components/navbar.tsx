@@ -19,7 +19,7 @@ import clsx from "clsx";
 
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
-	TwitterIcon,
+	LinkedInIcon,
 	GithubIcon,
 	DiscordIcon,
 } from "@/components/icons";
@@ -58,6 +58,9 @@ export const Navbar = () => {
 				justify="end"
 			>
 				<NavbarItem className="hidden sm:flex gap-2">
+				<Link isExternal href={siteConfig.links.linkedin} aria-label="LinkedIn">
+						<LinkedInIcon className="text-default-500" />
+					</Link>
 					<Link isExternal href={siteConfig.links.discord} aria-label="Discord">
 						<DiscordIcon className="text-default-500" />
 					</Link>
