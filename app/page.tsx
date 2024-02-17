@@ -22,7 +22,7 @@ function Hero() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
 			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={title()}>I'm a&nbsp;</h1>
+				<h1 className={title()}>I&apos;m a&nbsp;</h1>
 				<h1 className={title({ color: "violet" })}>Software Engineer&nbsp;</h1>
 				<br />
 				<h1 className={title()}>
@@ -50,8 +50,6 @@ function Hero() {
 					GitHub
 				</Link>
 			</div>
-
-			
 		</section>
 	);
 }
