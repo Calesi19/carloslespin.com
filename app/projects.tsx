@@ -47,7 +47,7 @@ const CardCarousel = () => {
         {/* CARDS */}
         <div className="mx-auto max-w-6xl">
           <p className="mb-4 text-2xl font-semibold">
-            Everything. <span className="text-slate-500">Yes, even that.</span>
+            Projects. <span className="text-slate-500">From start to finish.</span>
           </p>
           <motion.div
             animate={{
@@ -126,7 +126,7 @@ type ItemType = {
 const items: ItemType[] = [
   {
     id: 1,
-    url: "https://github.com/Calesi19/Timeshare-Pro-App/blob/main/docs/1.png?raw=true",
+    url: "https://github.com/Calesi19/Timeshare-Pro-App/blob/main/docs/5.png?raw=true",
     category: "Mobile",
     title: "Timeshare Pro",
     description:
@@ -134,27 +134,27 @@ const items: ItemType[] = [
   },
   {
     id: 2,
-    url: "/imgs/computer/keyboard.png",
-    category: "Keyboards",
-    title: "Type in style",
+    url: "https://github.com/Calesi19/Temples/blob/main/docs/square.png?raw=true",
+    category: "Backend",
+    title: "Library System",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "A Django API for information of temples worldwide. Containerized using Docker.",
   },
   {
     id: 3,
-    url: "/imgs/computer/monitor.png",
-    category: "Monitors",
-    title: "Looks like a win",
+    url: "https://github.com/Calesi19/SQLibrarySystem/blob/main/docs/square.png?raw=true",
+    category: "Database",
+    title: "Library System",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "MySQL model of a library system with schema and data.",
   },
   {
     id: 4,
-    url: "/imgs/computer/chair.png",
-    category: "Chairs",
-    title: "Back feels great",
+    url: "https://github.com/Calesi19/TypeSwift/blob/main/docs/square.png?raw=true",
+    category: "Desktop",
+    title: "TypeSwift",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      "A compact text-expander for creating shortcuts to reduce typing time.",
   },
   {
     id: 5,

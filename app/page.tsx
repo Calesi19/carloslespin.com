@@ -7,13 +7,16 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import CardCarousel from "./projects";
+import DoubleScrollingLogos from "./technologies";
 
 
 export default function Home() {
 	return (
 		<div>
-		<Hero />
+			<Hero />
+			<DoubleScrollingLogos />
 			<CardCarousel />
+			
 		</div>
 	);
 }
@@ -22,7 +25,7 @@ export default function Home() {
 function Hero() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center">
+			<div className="inline-block max-w-lg text-center justify-center container">
 				<div className=" flex items-center justify-center">
 					<Image
 						className="mb-4"
@@ -35,7 +38,7 @@ function Hero() {
 				<h1 className={title({ color: "violet" })}>Software Engineer&nbsp;</h1>
 				<br />
 				<h1 className={title()}>
-				 	currently searching for internships.
+				 	available for internships.
 				</h1>
 				<h2 className={subtitle({ class: "mt-4" })}>
 				Crafting Beautiful, Fast, and Modern Applications.
@@ -46,7 +49,7 @@ function Hero() {
 				<Link
 					isExternal
 					href={siteConfig.links.docs}
-					className={buttonStyles({ color: "primary", variant: "shadow" })}
+					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
 				>
 					Contact Me
 				</Link>
