@@ -8,7 +8,7 @@ export const TabsFAQ = () => {
   const [selected, setSelected] = useState(TABS[0]);
 
   return (
-    <section className="overflow-hidden px-4 py-12 my-[400px] text-slate-50">
+    <section className="overflow-hidden px-4 py-12 my-[400px] ">
       <Heading />
       <Tabs selected={selected} setSelected={setSelected} />
       <Questions selected={selected} />
@@ -103,18 +103,14 @@ const Question = ({ question, answer }: QuestionType) => {
   return (
     <motion.div
       animate={open ? "open" : "closed"}
-      className={`rounded-xl border-[1px] border-slate-700 px-4 transition-colors ${
-        open ? "bg-slate-800" : "bg-slate-900"
-      }`}
+      className={`rounded-xl border-[1px] border-slate-700 px-4 transition-colors`}
     >
       <button
         onClick={() => setOpen((pv) => !pv)}
         className="flex w-full items-center justify-between gap-4 py-4"
       >
         <span
-          className={`text-left text-lg font-medium transition-colors ${
-            open ? "text-slate-50" : "text-slate-400"
-          }`}
+          className={`text-left text-lg font-medium transition-colors `}
         >
           {question}
         </span>
