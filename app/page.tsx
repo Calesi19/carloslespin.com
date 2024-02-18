@@ -7,6 +7,7 @@ import { GithubIcon } from "@/components/icons";
 import CardCarousel from "./projects";
 import DoubleScrollingLogos from "./technologies";
 import Resume from "./resume";
+import { TabsFAQ } from "./faq";
 
 export default function Home() {
 	return (
@@ -15,6 +16,7 @@ export default function Home() {
 			<DoubleScrollingLogos />
 			<CardCarousel />
 			<Resume />
+			<TabsFAQ />
 		</div>
 	);
 }
