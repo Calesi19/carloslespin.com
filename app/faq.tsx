@@ -8,7 +8,7 @@ export const TabsFAQ = () => {
   const [selected, setSelected] = useState(TABS[0]);
 
   return (
-    <section className="overflow-hidden px-4 py-12 my-[400px] ">
+    <section className=" px-4 py-12 my-[400px] ">
       <Heading />
       <Tabs selected={selected} setSelected={setSelected} />
       <Questions selected={selected} />
@@ -24,7 +24,7 @@ const Heading = () => {
         <span className="mb-8 text-5xl font-bold">FAQs</span>
       </div>
 
-      <span className="absolute -top-[350px] left-[50%] z-0 h-[500px] w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
+      <span className="absolute -top-[350px] left-[50%] z-0 h-[500px] w-[600px] max-w-[100vw] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
     </>
   );
 };
