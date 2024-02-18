@@ -10,15 +10,15 @@ import Resume from "./resume";
 import { TabsFAQ } from "./faq";
 import { BouncyCardsFeatures } from "./contact";
 import Footer from "./footer";
-
+import AccordionSolutions from "./about";
 export default function Home() {
 	return (
 		<div>
 			<Hero />
 			<DoubleScrollingLogos />
 			<CardCarousel />
+			<AccordionSolutions/>
 			<Resume />
-			
 			<Footer />
 		</div>
 	);

@@ -43,17 +43,17 @@ const CardCarousel = () => {
 
   return (
     <section  ref={ref}>
-      <div className="relative overflow-hidden p-4 my-8">
+      <div className="relative overflow-hidden p-4 my-16">
         {/* CARDS */}
         <div className="mx-auto max-w-6xl">
-          <p className="mb-4 text-2xl font-semibold">
-            Projects. <span className="text-slate-500">Find them on GitHub.</span>
-          </p>
+          <div className="tracking-tight inline font-semibold text-4xl lg:text-6xl z-50">
+            Projects. <span className="">Find them on GitHub.</span>
+          </div>
           <motion.div
             animate={{
               x: offset,
             }}
-            className="flex"
+            className="flex mt-16"
           >
             {items.map((item) => {
               return <Card key={item.id} {...item} />;
