@@ -54,3 +54,10 @@
 }
 
 
+.logo-skew {
+    transform: skew(-30deg);
+}
+
+*.light {
+    background-color: #fafafa;
+}
