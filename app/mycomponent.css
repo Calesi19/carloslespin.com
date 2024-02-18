@@ -1,86 +1,56 @@
-
-.bg-shape1 {
+.bg-shape1, .bg-shape2, .bg-shape3, .bg-shape4, .bg-shape5, .bg-shape6 {
     position: relative;
-    animation: one 20s infinite;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
 }
 
-.bg-shape2 {
-    position: relative;
-    animation: two 12s infinite;
-}
-
-.bg-shape3 {
-    position: relative;
-    animation: three 16s infinite;
-}
-
-.bg-shape4 {
-    position: relative;
-    animation: four 20s infinite;
-}
-
-.bg-shape5 {
-    position: relative;
-    animation: five 12s infinite;
-}
-
-.bg-shape6 {
-    position: relative;
-    animation: six 16s infinite;
-}
-
+.bg-shape1 { animation: one 20s infinite; }
+.bg-shape2 { animation: two 12s infinite; }
+.bg-shape3 { animation: three 16s infinite; }
+.bg-shape4 { animation: four 20s infinite; }
+.bg-shape5 { animation: five 12s infinite; }
+.bg-shape6 { animation: six 16s infinite; }
 
 @keyframes one {
-    0% {left: 0px; top: 0px;}
-    25% {left: 100px; top: 370px;}
-    50% {left: 20px; top: 150px;}
-    75% {left: 50px; top: 100px;}
-    100% {left: 0px; top: 0px;}
+    0%, 100% {transform: translate3d(0px, 0px, 0);}
+    25% {transform: translate3d(100px, 370px, 0);}
+    50% {transform: translate3d(20px, 150px, 0);}
+    75% {transform: translate3d(50px, 100px, 0);}
 }
 
-
 @keyframes two {
-    0% {left: 0px; top: 0px;}
-    25% {left: 50px; top: 10px;}
-    50% {left: 100px; top: 50px;}
-    75% {left: 50px; top: 100px;}
-    100% {left: 0px; top: 0px;}
+    0%, 100% {transform: translate3d(0px, 0px, 0);}
+    25% {transform: translate3d(50px, 10px, 0);}
+    50% {transform: translate3d(100px, 50px, 0);}
+    75% {transform: translate3d(50px, 100px, 0);}
 }
 
 @keyframes three {
-    0% {left: 100px; top: 100px;}
-    25% {left: 50px; top: 10px;}
-    50% {left: 100px; top: 50px;}
-    75% {left: 50px; top: 100px;}
-    100% {left: 100px; top: 100px;}
+    0%, 100% {transform: translate3d(100px, 100px, 0);}
+    25% {transform: translate3d(50px, 10px, 0);}
+    50% {transform: translate3d(100px, 50px, 0);}
+    75% {transform: translate3d(50px, 100px, 0);}
 }
 
 @keyframes four {
-    0% {left: -300px; top: 0px;}
-    25% {left: -140px; top: 0px;}
-    50% {left: -20px; top: 0px;}
-    75% {left: -50px; top: 0px;}
-    100% {left: -300px; top: 0px;}
+    0%, 100% {transform: translate3d(-300px, 0px, 0);}
+    25% {transform: translate3d(-140px, 0px, 0);}
+    50% {transform: translate3d(-20px, 0px, 0);}
+    75% {transform: translate3d(-50px, 0px, 0);}
 }
 
-
 @keyframes five {
-    0% {left: 0px; top: 0px;}
-    25% {left: 100px; top: 0px;}
-    50% {left: 20px; top: 0px;}
-    75% {left: -100px; top: 0px;}
-    100% {left: 0px; top: 0px;}
+    0%, 100% {transform: translate3d(0px, 0px, 0);}
+    25% {transform: translate3d(100px, 0px, 0);}
+    50% {transform: translate3d(20px, 0px, 0);}
+    75% {transform: translate3d(-100px, 0px, 0);}
 }
 
 @keyframes six {
-    0% {left: 300px; top: 0px;}
-    25% {left: 100px; top: 0px;}
-    50% {left: 20px; top: 0px;}
-    75% {left: 50px; top: 0px;}
-    100% {left: 300px; top: 0px;}
+    0%, 100% {transform: translate3d(300px, 0px, 0);}
+    25% {transform: translate3d(100px, 0px, 0);}
+    50% {transform: translate3d(20px, 0px, 0);}
+    75% {transform: translate3d(50px, 0px, 0);}
 }
 
-bg-blur {
-    filter: blur(90px);
-}
 
