@@ -6,7 +6,7 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
-import Footer from "./footer";
+import FooterBar from "./footer";
 export const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,
@@ -44,7 +44,7 @@ export default function RootLayout({
 						<main className=" flex-grow">
 							{children}
 						</main>
-						<Footer />
+						<FooterBar />
 					</div>
 				</Providers>
 			</body>

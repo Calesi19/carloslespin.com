@@ -15,7 +15,7 @@ export const BouncyCardsFeatures = () => {
             </div>
       <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end md:px-8">
         <h2 className="max-w-lg text-4xl font-bold md:text-5xl">
-        Let's Build Something Together.
+        Let&apos;s Build Something Together.
           <span className="text-slate-400"> Contact Me</span>
         </h2>
         <motion.button
