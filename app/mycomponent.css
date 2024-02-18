@@ -11,14 +11,14 @@
 
 .bg-shape3 {
     position: relative;
-    animation: three 15s infinite;
+    animation: three 16s infinite;
 }
 
 
 
 @keyframes one {
     0% {left: 0px; top: 0px;}
-    25% {left: -100px; top: 70px;}
+    25% {left: 100px; top: 370px;}
     50% {left: 20px; top: 150px;}
     75% {left: 50px; top: 100px;}
     100% {left: 0px; top: 0px;}
@@ -38,7 +38,7 @@
     25% {left: 50px; top: 10px;}
     50% {left: 100px; top: 50px;}
     75% {left: 50px; top: 100px;}
-    100% {left: 0px; top: 0px;}
+    100% {left: 100px; top: 100px;}
 }
 
 bg-blur {

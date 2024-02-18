@@ -16,7 +16,7 @@ export default function Resume() {
                 <div className='inset-0 flex-row justify-center flex'>
                     <div className=' bg-shape1 w-[200px] h-[300px] bg-blue-400 opacity-50 blur-[90px] rounded-full'>6jgh</div>
                     <div className=' bg-shape2 w-[100px] lg:w-[400px] h-[400px] bg-red-400 opacity-50 blur-[90px] rounded-full'>sgfg</div>
-                    <div className=' bg-shape1 w-[340px] h-[350px] bg-purple-400 opacity-50 blur-[90px] rounded-full'>sfgsg</div>
+                    <div className=' bg-shape3 w-[340px] h-[350px] bg-purple-400 opacity-50 blur-[90px] rounded-full'>sfgsg</div>
                 </div>
 
             </div>
