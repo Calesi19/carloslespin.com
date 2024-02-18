@@ -9,7 +9,7 @@ import { IconType } from "react-icons";
 
 const DoubleScrollingLogos = () => {
   return (
-    <section className="py-4 overflow-y-visible">
+    <section className="py-4 overflow-hidden">
       <div className="flex">
         <TranslateWrapper>
           <LogoItemsTop />

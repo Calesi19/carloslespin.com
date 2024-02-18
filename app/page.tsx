@@ -16,13 +16,14 @@ export default function Home() {
 		<div>
 			<Hero />
 			<DoubleScrollingLogos />
+			<AccordionSolutions/>
 			<CardCarousel />
 			<AccordionSolutions/>
 
 			<Footer />
 		</div>
 	);
-}
+}  
 
 
 function Hero() {

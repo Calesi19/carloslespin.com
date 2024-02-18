@@ -17,7 +17,7 @@ const AccordionSolutions = () => {
                 </div>
 
             </div>
-      <div className="w-full container max-w-5xl mx-auto grid gap-8 grid-cols-1 lg:grid-cols-[1fr_350px] z-50">
+      <div className="w-full container grid gap-8 grid-cols-1 lg:grid-cols-[1fr_350px] z-50">
         <div>
           <h3 className="text-4xl font-bold mb-8">About Me</h3>
           <div className="flex flex-col gap-4">
