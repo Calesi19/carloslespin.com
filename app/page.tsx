@@ -6,7 +6,7 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import CardCarousel from "./projects";
 import DoubleScrollingLogos from "./technologies";
-
+import Resume from "./resume";
 
 export default function Home() {
 	return (
@@ -14,7 +14,7 @@ export default function Home() {
 			<Hero />
 			<DoubleScrollingLogos />
 			<CardCarousel />
-			
+			<Resume />
 		</div>
 	);
 }
@@ -23,7 +23,7 @@ export default function Home() {
 function Hero() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center container">
+			<div className="inline-block max-w-lg text-center justify-center">
 				<div className=" flex items-center justify-center">
 					<Image
 						className="mb-4"

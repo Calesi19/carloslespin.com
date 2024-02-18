@@ -47,7 +47,7 @@ const CardCarousel = () => {
         {/* CARDS */}
         <div className="mx-auto max-w-6xl">
           <p className="mb-4 text-2xl font-semibold">
-            Projects. <span className="text-slate-500">Check out on GitHub.</span>
+            Projects. <span className="text-slate-500">Find them on GitHub.</span>
           </p>
           <motion.div
             animate={{
