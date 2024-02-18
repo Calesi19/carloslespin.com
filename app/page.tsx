@@ -18,8 +18,7 @@ export default function Home() {
 			<DoubleScrollingLogos />
 			<CardCarousel />
 			<Resume />
-			<TabsFAQ />
-			<BouncyCardsFeatures />
+			
 			<Footer />
 		</div>
 	);
