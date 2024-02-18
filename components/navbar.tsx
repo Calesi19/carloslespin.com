@@ -29,7 +29,7 @@ function Logo() {
 	const { theme } = useTheme();
 	return (
 		<div id="logo" className="h-[32px] w-[128px] relative font-bold">
-			<div id="prll" className={`h-[32px] w-[64px] logo-skew rounded-lg ${theme === "light" ? "bg-black" : "bg-white"}`}></div>
+			<div id="prll" className={`h-[32px] w-[62px] logo-skew rounded-lg absolute left-[2px] ${theme === "light" ? "bg-black" : "bg-white"}`}></div>
         <span id="first-name" className={`absolute top-[3px] left-[5px] text-[20.5px] ${theme === "light" ? "text-white" : "text-black"}`}>carlos</span><span id="last-name absolute" className={`absolute top-[3px] left-[65px] text-[20.5px] ${theme === "light" ? "text-black" : "text-white"}`}>lespin</span>
         </div>
 	)
