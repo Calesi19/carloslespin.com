@@ -7,7 +7,7 @@ import { HiOutlineDocumentDownload } from "react-icons/hi";
 export default function Resume() {
     const { theme } = useTheme();
     return (
-        <section className='py-32 min-h-[800px]'>
+        <section className='py-32 min-h-[800px] overflow-x-hidden w-[100vw]'>
             <div className='container'>
             <h2 className='tracking-tight inline font-semibold text-4xl lg:text-6xl z-50'>
                 Download my <span className='tracking-tight inline font-semibold from-[#5EA2EF] to-[#0072F5] text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b'> Resume</span><br/> and <span className='tracking-tight inline font-semibold from-[#FF705B] to-[#FFB457] text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b'>Cover Letter</span>.

@@ -9,7 +9,7 @@ import { IconType } from "react-icons";
 
 const DoubleScrollingLogos = () => {
   return (
-    <section className="py-4">
+    <section className="py-4 overflow-y-visible">
       <div className="flex">
         <TranslateWrapper>
           <LogoItemsTop />
@@ -64,7 +64,7 @@ const LogoItem = ({ Icon }: { Icon: IconType }) => {
           className="w-16 md:w-24 h-16 md:h-24 flex justify-center items-center text-white transition-colors"
           style={{ color: theme === "light" ? "black" : "white" }} // Change the color based on the theme
     >
-      <span className="absolute w-16 md:w-24 h-16 md:h-24 flex justify-center items-center rounded-full blur-3xl opacity-70 hover:bg-violet-500 text-white transition-colors"/>
+      <span className="absolute w-16 md:w-24 h-16 md:h-24 flex justify-center items-center rounded-full blur-3xl opacity-90 hover:bg-violet-500 text-white transition-colors"/>
       <Icon className="text-4xl md:text-5xl" />
     </a>
   );

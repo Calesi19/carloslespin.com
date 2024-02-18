@@ -18,7 +18,7 @@ export default function Home() {
 			<DoubleScrollingLogos />
 			<CardCarousel />
 			<AccordionSolutions/>
-			<Resume />
+
 			<Footer />
 		</div>
 	);
@@ -28,10 +28,13 @@ export default function Home() {
 function Hero() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+			<span className="absolute -top-[250px] left-[50%] z-0 h-[500px] w-[600px] max-w-[100vw] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
+			<span className="absolute -top-[250px] left-[50%] z-0 h-[500px] w-[600px] max-w-[100vw] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
+
 			<div className="inline-block max-w-lg text-center justify-center">
 				<div className=" flex items-center justify-center">
 					<Image
-						className="mb-4"
+						className="mb-4 z-10"
 						height={150}
       width={150}
       alt="NextUI hero Image"
