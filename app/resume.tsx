@@ -1,7 +1,7 @@
 'use client';
 
 import { useTheme } from 'next-themes';
-
+import "./mycomponent.css";
 
 export default function Resume() {
     const { theme } = useTheme();
@@ -12,11 +12,11 @@ export default function Resume() {
                 Get my <span className='tracking-tight inline font-semibold from-[#5EA2EF] to-[#0072F5] text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b'> Resume</span> and <span className='tracking-tight inline font-semibold from-[#FF705B] to-[#FFB457] text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b'>Cover Letter</span>.
             </h2>
             </div>
-            <div className='flex container absolute overflow-visible'>
-                <div className='absolute inset-0 overflow-visible inline-flex flex-row'>
-                    <div className='bg-shape1 w-[400px] h-[400px] bg-orange-400 opacity-50 blur-[90px] rounded-full'>6jgh</div>
-                    <div className='bg-shape3 w-[400px] h-[400px] bg-red-400 blur-[90px] rounded-full'>sgfg</div>
-                    <div className='bg-shape1 w-[400px] h-[400px] bg-purple-400 opacity-50 blur-[90px] rounded-full'>sfgsg</div>
+            <div className='flex absolute overflow-visible box w-full justify-center'>
+                <div className='inset-0 overflow-visible flex-row justify-center flex'>
+                    <div className='bg-shape1 w-[200px] h-[300px] bg-blue-400 opacity-50 blur-[90px] rounded-full'>6jgh</div>
+                    <div className='bg-shape2 w-[100px] lg:w-[400px] h-[400px] bg-red-400 opacity-50 blur-[90px] rounded-full'>sgfg</div>
+                    <div className='bg-shape1 w-[340px] h-[350px] bg-purple-400 opacity-50 blur-[90px] rounded-full'>sfgsg</div>
                 </div>
 
             </div>
