@@ -45,7 +45,7 @@ const CardCarousel = () => {
     <section  ref={ref}>
       <div className="relative overflow-hidden p-4 my-16">
         {/* CARDS */}
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto container">
           <div className="tracking-tight inline font-semibold text-4xl z-50">
             Projects. <span className="">Find them on GitHub.</span>
           </div>

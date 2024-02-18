@@ -56,7 +56,6 @@
 
 .logo-skew {
     transform: skew(-30deg);
-    -webkit-transform: skew(-30deg);
 }
 
 *.light {

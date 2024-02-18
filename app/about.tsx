@@ -8,7 +8,7 @@ const AccordionSolutions = () => {
   const [open, setOpen] = useState(solutions[0].id);
   const imgSrc = solutions.find((s) => s.id === open)?.imgSrc;
   return (
-      <section className="overflow-x-hidden w-[100vw]">
+      <section className="overflow-x-hidden w-[100vw] my-16">
           <div className='flex absolute w-[100vw] justify-center h-[500px]'>
                 <div className='inset-0 flex-row justify-center flex w-[100vw]'>
                     <div className=' bg-shape1 w-[200px] h-[300px] bg-[#c0fdff] opacity-50 blur-[90px] rounded-full'>6jgh</div>
