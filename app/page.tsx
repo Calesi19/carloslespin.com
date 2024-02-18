@@ -8,6 +8,8 @@ import CardCarousel from "./projects";
 import DoubleScrollingLogos from "./technologies";
 import Resume from "./resume";
 import { TabsFAQ } from "./faq";
+import { BouncyCardsFeatures } from "./contact";
+import Footer from "./footer";
 
 export default function Home() {
 	return (
@@ -17,6 +19,8 @@ export default function Home() {
 			<CardCarousel />
 			<Resume />
 			<TabsFAQ />
+			<BouncyCardsFeatures />
+			<Footer />
 		</div>
 	);
 }

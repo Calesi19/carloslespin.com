@@ -14,6 +14,20 @@
     animation: three 16s infinite;
 }
 
+.bg-shape4 {
+    position: relative;
+    animation: four 20s infinite;
+}
+
+.bg-shape5 {
+    position: relative;
+    animation: five 12s infinite;
+}
+
+.bg-shape6 {
+    position: relative;
+    animation: six 16s infinite;
+}
 
 
 @keyframes one {
@@ -39,6 +53,31 @@
     50% {left: 100px; top: 50px;}
     75% {left: 50px; top: 100px;}
     100% {left: 100px; top: 100px;}
+}
+
+@keyframes four {
+    0% {left: -300px; top: 0px;}
+    25% {left: -140px; top: 0px;}
+    50% {left: -20px; top: 0px;}
+    75% {left: -50px; top: 0px;}
+    100% {left: -300px; top: 0px;}
+}
+
+
+@keyframes five {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 20px; top: 0px;}
+    75% {left: -100px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+
+@keyframes six {
+    0% {left: 300px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 20px; top: 0px;}
+    75% {left: 50px; top: 0px;}
+    100% {left: 300px; top: 0px;}
 }
 
 bg-blur {
