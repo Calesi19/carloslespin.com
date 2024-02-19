@@ -5,7 +5,6 @@ import { fontSans } from "../config/fonts";
 import { Providers } from "./providers";
 import { Navbar } from "../components/navbar";
 import clsx from "clsx";
-import FooterBar from "./footer";
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
