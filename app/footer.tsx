@@ -3,19 +3,11 @@ import React from "react";
 
 export const FooterBar = (): React.JSX.Element => {
   return (
-    <footer className="overflow-b-hidden">
-      <div className="mt-4 rounded-t-2xl z-20 text-foreground box-border outline-none shadow-medium transition-transform-background motion-reduce:transition-none border-transparent dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
-        <div className="flex absolute mt-[200px] w-[100vw] justify-center z-10">
-          <div className="inset-0 container flex-row justify-center flex">
-            <div className="bg-shape4 w-[700px] h-[400px] bg-violet-900 blur-[160px] rounded-full"></div>
-            <div className="bg-shape5 w-[700px] lg:w-[400px] h-[400px] bg-violet-400 blur-[160px] rounded-full"></div>
-            <div className="bg-shape6 w-[700px] h-[400px] bg-purple-900 blur-[160px] rounded-full"></div>
-          </div>
-        </div>
-
-        <div className="container z-50 flex py-[100px] items-center justify-between flex-col gap-10 lg:flex-row lg:gap-0">
+    <footer className="overflow-hidden">
+      <div className="overflow-hidden mt-4 rounded-t-2xl z-10 text-foreground box-border outline-none shadow-medium transition-transform-background motion-reduce:transition-none border-transparent dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+        <div className="container z-50 flex py-20 items-center justify-between flex-col gap-10 lg:flex-row lg:gap-0">
           <div>
-            <h2 className={`lg:text-6xl ${title()}`}>
+            <h2 className={`lg:text-6xl z-50 ${title()}`}>
               Let&apos;s chat.
               <br />{" "}
               <span className={`lg:text-6xl ${title({ color: "violet" })}`}>
@@ -138,6 +130,13 @@ export const FooterBar = (): React.JSX.Element => {
                 GitHub
               </button>
             </a>
+          </div>
+          <div className="flex absolute left-[0] h-0 w-[100vw] justify-center z-0">
+            <div className="inset-0 container flex-row justify-center flex">
+              <div className="absolute bg-shape4 w-[700px] h-[400px] bg-violet-900 blur-[160px] rounded-full"></div>
+              <div className="absolute bg-shape5 w-[700px] lg:w-[400px] h-[400px] bg-violet-400 blur-[160px] rounded-full"></div>
+              <div className="absolute bg-shape6 w-[700px] h-[400px] bg-purple-900 blur-[160px] rounded-full"></div>
+            </div>
           </div>
         </div>
       </div>
