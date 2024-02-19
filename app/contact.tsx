@@ -1,21 +1,27 @@
-'use client';
-import React, { ReactNode } from "react";
+"use client";
+import React, { type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { SiGithub } from "react-icons/si";
 
-export const BouncyCardsFeatures = () => {
+export const BouncyCardsFeatures = (): React.JSX.Element => {
   return (
-      <section className="mx-auto max-w-7xl px-4 py-12">
-           <div className='flex absolute container w-[100vw] justify-center'>
-                <div className='inset-0 flex-row justify-center flex'>
-                    <div className=' bg-shape1 w-[200px] h-[300px] bg-orange-400 opacity-50 blur-[90px] rounded-full'>6jgh</div>
-                    <div className=' bg-shape2 w-[100px] lg:w-[400px] h-[400px] bg-blue-400 opacity-50 blur-[90px] rounded-full'>sgfg</div>
-                    <div className=' bg-shape3 w-[340px] h-[350px] bg-green-400 opacity-50 blur-[90px] rounded-full'>sfgsg</div>
-                </div>
-            </div>
+    <section className="mx-auto max-w-7xl px-4 py-12">
+      <div className="flex absolute container w-[100vw] justify-center">
+        <div className="inset-0 flex-row justify-center flex">
+          <div className=" bg-shape1 w-[200px] h-[300px] bg-orange-400 opacity-50 blur-[90px] rounded-full">
+            6jgh
+          </div>
+          <div className=" bg-shape2 w-[100px] lg:w-[400px] h-[400px] bg-blue-400 opacity-50 blur-[90px] rounded-full">
+            sgfg
+          </div>
+          <div className=" bg-shape3 w-[340px] h-[350px] bg-green-400 opacity-50 blur-[90px] rounded-full">
+            sfgsg
+          </div>
+        </div>
+      </div>
       <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end md:px-8">
         <h2 className="max-w-lg text-4xl font-bold md:text-5xl">
-        Let&apos;s Build Something Together.
+          Let&apos;s Build Something Together.
           <span className="text-slate-400"> Contact Me</span>
         </h2>
         <motion.button
@@ -56,7 +62,7 @@ export const BouncyCardsFeatures = () => {
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>Follow Me On GitHub</CardTitle>
           <div className="absolute overflow-hidden bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#0D1118] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-                      <SiGithub className="text-[150px] text-white absolute top-[-5px] left-[150px]" />
+            <SiGithub className="text-[150px] text-white absolute top-[-5px] left-[150px]" />
           </div>
         </BounceCard>
       </div>
@@ -70,7 +76,7 @@ const BounceCard = ({
 }: {
   className: string;
   children: ReactNode;
-}) => {
+}): React.JSX.Element => {
   return (
     <motion.div
       whileHover={{ scale: 0.95, rotate: "-1deg" }}
@@ -81,7 +87,11 @@ const BounceCard = ({
   );
 };
 
-const CardTitle = ({ children }: { children: ReactNode }) => {
+const CardTitle = ({
+  children,
+}: {
+  children: ReactNode;
+}): React.JSX.Element => {
   return (
     <h3 className="mx-auto text-center text-3xl font-semibold">{children}</h3>
   );

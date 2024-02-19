@@ -1,10 +1,12 @@
 import "../styles/globals.css";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { siteConfig } from "../config/site";
 import { fontSans } from "../config/fonts";
 import { Providers } from "./providers";
 import { Navbar } from "../components/navbar";
 import clsx from "clsx";
+
+
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -26,7 +28,7 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}): React.JSX.Element {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
@@ -40,7 +42,6 @@ export default function RootLayout({
           <div className="relative flex flex-col">
             <Navbar />
             <main className="flex-grow">{children}</main>
-            
           </div>
         </Providers>
       </body>

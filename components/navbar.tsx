@@ -113,6 +113,7 @@ export const Navbar = (): React.JSX.Element => {
       <NavbarMenu>
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
+            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 color={
