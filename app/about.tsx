@@ -1,29 +1,35 @@
-'use client';
+"use client";
 
-import { Dispatch, SetStateAction, useState } from "react";
+import React from "react";
+import { type Dispatch, type SetStateAction, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 
-const AccordionSolutions = () => {
+const AccordionSolutions = (): React.JSX.Element => {
   const [open, setOpen] = useState(solutions[0].id);
   const imgSrc = solutions.find((s) => s.id === open)?.imgSrc;
   return (
-      <section className="overflow-x-hidden w-[100vw] my-16">
-          <div className='flex absolute w-[100vw] justify-center h-[500px]'>
-                <div className='inset-0 flex-row justify-center flex w-[100vw]'>
-                    <div className=' bg-shape1 w-[200px] h-[300px] bg-[#c0fdff] opacity-50 blur-[90px] rounded-full'>6jgh</div>
-                    <div className=' bg-shape2 w-[100px] lg:w-[400px] h-[400px] bg-[#deaaff] opacity-50 blur-[90px] rounded-full'>sgfg</div>
-                    <div className=' bg-shape3 w-[340px] h-[350px] bg-[#b8c0ff] opacity-50 blur-[90px] rounded-full'>sfgsg</div>
-                </div>
-
-            </div>
+    <section className="overflow-x-hidden w-[100vw] my-16">
+      <div className="flex absolute w-[100vw] justify-center h-[500px]">
+        <div className="inset-0 flex-row justify-center flex w-[100vw]">
+          <div className=" bg-shape1 w-[200px] h-[300px] bg-[#c0fdff] opacity-50 blur-[90px] rounded-full"></div>
+          <div className=" bg-shape2 w-[100px] lg:w-[400px] h-[400px] bg-[#deaaff] opacity-50 blur-[90px] rounded-full"></div>
+          <div className=" bg-shape3 w-[340px] h-[350px] bg-[#b8c0ff] opacity-50 blur-[90px] rounded-full"></div>
+        </div>
+      </div>
       <div className="w-full container grid gap-8 grid-cols-1 lg:grid-cols-[1fr_350px] z-50">
         <div>
           <h3 className="text-4xl font-bold mb-8">About Me</h3>
           <div className="flex flex-col gap-4">
             {solutions.map((q) => {
               return (
-                <Solution {...q} key={q.id} open={open} setOpen={setOpen} index={q.id} />
+                <Solution
+                  {...q}
+                  key={q.id}
+                  open={open}
+                  setOpen={setOpen}
+                  index={q.id}
+                />
               );
             })}
           </div>
@@ -59,12 +65,14 @@ const Solution = ({
   index: number;
   open: number;
   setOpen: Dispatch<SetStateAction<number>>;
-}) => {
+}): React.JSX.Element => {
   const isOpen = index === open;
 
   return (
     <div
-      onClick={() => setOpen(index)}
+      onClick={() => {
+        setOpen(index);
+      }}
       className="p-0.5 rounded-lg relative overflow-hidden cursor-pointer"
     >
       <motion.div
@@ -125,8 +133,7 @@ const solutions = [
     title: "⚡️ Carlos Lespin",
     description:
       "Software Engineering grad, working in IT and a software engineering internship. I'm all about learning new stuff and keeping up with the tech world.",
-    imgSrc:
-      "/portrait.png",
+    imgSrc: "/portrait.png",
   },
   {
     id: 2,
