@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import React, { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
 
@@ -15,7 +15,7 @@ const BREAKPOINTS = {
   lg: 1024,
 };
 
-const CardCarousel = () => {
+const CardCarousel = (): React.JSX.Element => {
   const [ref, { width }] = useMeasure();
   const [offset, setOffset] = useState(0);
 
@@ -27,14 +27,14 @@ const CardCarousel = () => {
   const CAN_SHIFT_RIGHT =
     Math.abs(offset) < CARD_SIZE * (items.length - CARD_BUFFER);
 
-  const shiftLeft = () => {
+  const shiftLeft = (): void => {
     if (!CAN_SHIFT_LEFT) {
       return;
     }
     setOffset((pv) => (pv += CARD_SIZE));
   };
 
-  const shiftRight = () => {
+  const shiftRight = (): void => {
     if (!CAN_SHIFT_RIGHT) {
       return;
     }
@@ -42,7 +42,7 @@ const CardCarousel = () => {
   };
 
   return (
-    <section  ref={ref}>
+    <section ref={ref}>
       <div className="relative overflow-hidden p-4 my-16">
         {/* CARDS */}
         <div className="mx-auto container">
@@ -89,42 +89,48 @@ const CardCarousel = () => {
   );
 };
 
-const Card = ({ url, category, title, description, link }: ItemType) => {
+const Card = ({
+  url,
+  category,
+  title,
+  description,
+  link,
+}: ItemType): React.JSX.Element => {
   return (
-    <a href={link} target="_blank" rel="noreferrer"> 
-    <div
-      className="relative shrink-0 cursor-pointer rounded-2xl bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
-      style={{
-        width: CARD_WIDTH,
-        height: CARD_HEIGHT,
-        marginRight: MARGIN,
-        backgroundImage: `url(${url})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
-    >
-      <div className="absolute inset-0 z-20 rounded-2xl bg-gradient-to-b from-black/90 via-black/60 to-black/0 p-6 text-white transition-[backdrop-filter] hover:backdrop-blur-sm">
-        <span className="text-xs font-semibold uppercase text-violet-300">
-          {category}
-        </span>
-        <p className="my-2 text-3xl font-bold">{title}</p>
-        <p className="text-lg text-slate-300">{description}</p>
+    <a href={link} target="_blank" rel="noreferrer">
+      <div
+        className="relative shrink-0 cursor-pointer rounded-2xl bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
+        style={{
+          width: CARD_WIDTH,
+          height: CARD_HEIGHT,
+          marginRight: MARGIN,
+          backgroundImage: `url(${url})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="absolute inset-0 z-20 rounded-2xl bg-gradient-to-b from-black/90 via-black/60 to-black/0 p-6 text-white transition-[backdrop-filter] hover:backdrop-blur-sm">
+          <span className="text-xs font-semibold uppercase text-violet-300">
+            {category}
+          </span>
+          <p className="my-2 text-3xl font-bold">{title}</p>
+          <p className="text-lg text-slate-300">{description}</p>
+        </div>
       </div>
-      </div>
-      </a>
+    </a>
   );
 };
 
 export default CardCarousel;
 
-type ItemType = {
+interface ItemType {
   id: number;
   url: string;
   category: string;
   title: string;
   description: string;
   link: string;
-};
+}
 
 const items: ItemType[] = [
   {
@@ -134,7 +140,7 @@ const items: ItemType[] = [
     title: "Timeshare Pro",
     description:
       "Presentation tool for timeshare salesmen. Built with Flutter.",
-    link: "https://github.com/Calesi19/Timeshare-Pro-App"
+    link: "https://github.com/Calesi19/Timeshare-Pro-App",
   },
   {
     id: 2,
@@ -143,16 +149,15 @@ const items: ItemType[] = [
     title: "Library System",
     description:
       "A Django API for information of temples worldwide. Containerized using Docker.",
-      link: "https://github.com/Calesi19/Timeshare-Pro-App"
+    link: "https://github.com/Calesi19/Timeshare-Pro-App",
   },
   {
     id: 3,
     url: "https://github.com/Calesi19/SQLibrarySystem/blob/main/docs/square.png?raw=true",
     category: "Database",
     title: "Library System",
-    description:
-      "MySQL model of a library system with schema and data.",
-      link: "https://github.com/Calesi19/Timeshare-Pro-App"
+    description: "MySQL model of a library system with schema and data.",
+    link: "https://github.com/Calesi19/Timeshare-Pro-App",
   },
   {
     id: 4,
@@ -161,7 +166,7 @@ const items: ItemType[] = [
     title: "TypeSwift",
     description:
       "A compact text-expander for creating shortcuts to reduce typing time.",
-      link: "https://github.com/Calesi19/Timeshare-Pro-App"
+    link: "https://github.com/Calesi19/Timeshare-Pro-App",
   },
   {
     id: 5,
@@ -170,24 +175,22 @@ const items: ItemType[] = [
     title: "LockerHub",
     description:
       "Allows for locker rental transactions and also enables users to securely access their rented lockers. Built with Flutter.",
-      link: "https://github.com/Calesi19/Timeshare-Pro-App"
+    link: "https://github.com/Calesi19/Timeshare-Pro-App",
   },
   {
     id: 6,
     url: "https://github.com/Calesi19/TypeSpace/blob/main/square.gif?raw=true",
     category: "Game",
     title: "TypeSpace",
-    description:
-      "Typing game written in vanilla JavaScript.",
-      link: "https://github.com/Calesi19/Timeshare-Pro-App"
+    description: "Typing game written in vanilla JavaScript.",
+    link: "https://github.com/Calesi19/Timeshare-Pro-App",
   },
   {
     id: 7,
     url: "https://github.com/Calesi19/Chess/blob/main/demo.gif?raw=true",
     category: "Game",
     title: "Chess",
-    description:
-      "Chess game written in C++.",
-      link: "https://github.com/Calesi19/Timeshare-Pro-App"
+    description: "Chess game written in C++.",
+    link: "https://github.com/Calesi19/Timeshare-Pro-App",
   },
 ];

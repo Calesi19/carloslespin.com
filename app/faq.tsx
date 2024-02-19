@@ -1,7 +1,8 @@
-'use client';
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+"use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { type Dispatch, type SetStateAction, useState } from "react";
 import { FiPlus } from "react-icons/fi";
 
 export const TabsFAQ = () => {
@@ -20,7 +21,6 @@ const Heading = () => {
   return (
     <>
       <div className="relative z-10 flex flex-col items-center justify-center">
-        
         <span className="mb-8 text-5xl font-bold">FAQs</span>
       </div>
 
@@ -40,7 +40,9 @@ const Tabs = ({
     <div className="relative z-10 flex flex-wrap items-center justify-center gap-4">
       {TABS.map((tab) => (
         <button
-          onClick={() => setSelected(tab)}
+          onClick={() => {
+            setSelected(tab);
+          }}
           className={`relative overflow-hidden whitespace-nowrap rounded-md border-[1px] px-3 py-1.5 text-sm font-medium transition-colors duration-500 ${
             selected === tab
               ? "border-violet-500 text-slate-50"
@@ -106,12 +108,12 @@ const Question = ({ question, answer }: QuestionType) => {
       className={`rounded-xl border-[1px] border-slate-700 px-4 transition-colors`}
     >
       <button
-        onClick={() => setOpen((pv) => !pv)}
+        onClick={() => {
+          setOpen((pv) => !pv);
+        }}
         className="flex w-full items-center justify-between gap-4 py-4"
       >
-        <span
-          className={`text-left text-lg font-medium transition-colors `}
-        >
+        <span className={`text-left text-lg font-medium transition-colors `}>
           {question}
         </span>
         <motion.span
@@ -145,10 +147,10 @@ const Question = ({ question, answer }: QuestionType) => {
   );
 };
 
-type QuestionType = {
+interface QuestionType {
   question: string;
   answer: string;
-};
+}
 
 const TABS = ["Web dev", "Mobile dev", "UI/UX", "Copywriting"];
 
