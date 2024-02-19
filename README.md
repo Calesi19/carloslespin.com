@@ -38,3 +38,8 @@ npm run dev
 ## License
 
 Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+
+
+# Helpful Resources
+
+* [Setting up ESlint, Prettier, & Husky](https://www.youtube.com/watch?v=sH93pQb9bWM)
