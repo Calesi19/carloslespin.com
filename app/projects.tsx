@@ -146,7 +146,7 @@ const items: ItemType[] = [
     id: 2,
     url: "https://github.com/Calesi19/Temples/blob/main/docs/square.png?raw=true",
     category: "Backend",
-    title: "Library System",
+    title: "Temples API",
     description:
       "A Django API for information of temples worldwide. Containerized using Docker.",
     link: "https://github.com/Calesi19/Timeshare-Pro-App",

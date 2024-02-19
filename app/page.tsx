@@ -9,7 +9,7 @@ import DoubleScrollingLogos from "./technologies";
 import Resume from "./resume";
 // import { TabsFAQ } from "./faq";
 // import { BouncyCardsFeatures } from "./contact";
-import Footer from "./footer";
+import FooterBar from "./footer";
 import AccordionSolutions from "./about";
 import React from "react";
 
@@ -21,7 +21,7 @@ export default function Home(): React.JSX.Element {
       <AccordionSolutions />
       <CardCarousel />
       <Resume />
-      <Footer />
+      <FooterBar />
     </div>
   );
 }
