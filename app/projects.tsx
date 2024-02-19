@@ -53,7 +53,7 @@ const CardCarousel = () => {
             animate={{
               x: offset,
             }}
-            className="flex mt-16"
+            className="flex mt-8"
           >
             {items.map((item) => {
               return <Card key={item.id} {...item} />;
