@@ -6,7 +6,6 @@ import { Providers } from "./providers";
 import { Navbar } from "../components/navbar";
 import clsx from "clsx";
 
-
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -34,7 +33,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "overflow-x-hidden min-h-screen bg-background font-sans antialiased",
+          "h-screen w-full bg-background font-sans antialiased overflow-x-hidden",
           fontSans.variable
         )}
       >

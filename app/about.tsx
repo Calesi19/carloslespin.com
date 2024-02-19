@@ -9,9 +9,9 @@ const AccordionSolutions = (): React.JSX.Element => {
   const [open, setOpen] = useState(solutions[0].id);
   const imgSrc = solutions.find((s) => s.id === open)?.imgSrc;
   return (
-    <section className="overflow-x-hidden w-[100vw] my-16">
-      <div className="flex absolute w-[100vw] justify-center h-[500px]">
-        <div className="inset-0 flex-row justify-center flex w-[100vw]">
+    <section className="overflow-hidden w-full my-16">
+      <div className="flex absolute justify-center h-[500px] ">
+        <div className="inset-0 flex-row justify-center w-full flex overflow-x-hidden">
           <div className=" bg-shape1 w-[200px] h-[300px] bg-[#c0fdff] opacity-50 blur-[90px] rounded-full"></div>
           <div className=" bg-shape2 w-[100px] lg:w-[400px] h-[400px] bg-[#deaaff] opacity-50 blur-[90px] rounded-full"></div>
           <div className=" bg-shape3 w-[340px] h-[350px] bg-[#b8c0ff] opacity-50 blur-[90px] rounded-full"></div>

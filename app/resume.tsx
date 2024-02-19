@@ -6,7 +6,7 @@ import { HiOutlineDocumentDownload } from "react-icons/hi";
 
 export default function Resume(): React.JSX.Element {
   return (
-    <section className="py-32 min-h-[800px] overflow-x-hidden w-[100vw]">
+    <section className="py-32 min-h-[800px] w-screen">
       <div className="container">
         <h2 className="tracking-tight inline font-semibold text-4xl lg:text-6xl z-50">
           Download my{" "}
@@ -21,9 +21,9 @@ export default function Resume(): React.JSX.Element {
           .
         </h2>
       </div>
-      <div className="flex absolute w-[100vw] justify-center">
-        <div className="inset-0 flex-row justify-center flex">
-          <div className=" bg-shape1 w-[200px] h-[300px] bg-blue-400 opacity-50 blur-[90px] rounded-full"></div>
+      <div className="flex absolute w-screen justify-center">
+        <div className="inset-0 flex-row justify-center flex w-screen overflow-x-hidden">
+          <div className=" bg-shape1 w-[200px] h-[300px] bg-blue-400 opacity-50 blur-[90px] rounded-full over"></div>
           <div className=" bg-shape2 w-[100px] lg:w-[400px] h-[400px] bg-red-400 opacity-50 blur-[90px] rounded-full"></div>
           <div className=" bg-shape3 w-[340px] h-[350px] bg-purple-400 opacity-50 blur-[90px] rounded-full"></div>
         </div>

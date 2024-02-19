@@ -3,15 +3,15 @@ import React from "react";
 
 export const FooterBar = (): React.JSX.Element => {
   return (
-    <footer className="overflow-hidden">
-      <div className="flex absolute left-[0] bottom-[150px] h-0 w-[100vw] justify-center z-0">
-        <div className="inset-0 container flex-row justify-center flex">
-          <div className="absolute bg-shape4 w-[700px] h-[150px] bg-violet-900 blur-[160px] rounded-full"></div>
-          <div className="absolute bg-shape5 w-[700px] lg:w-[300px] h-[150px] bg-violet-400 blur-[160px] rounded-full"></div>
-          <div className="absolute bg-shape6 w-[700px] h-[150px] bg-purple-900 blur-[160px] rounded-full"></div>
+    <footer className="overflow-hidden w-full">
+      <div className="flex h-0 w-full justify-center z-0 absolute bottom-[300px] lg:bottom-[200px] xl:bottom-[120px]">
+        <div className="inset-0 flex-row justify-center flex">
+          <div className="bg-shape4 w-[150px] xl:w-[400px] h-[300px] lg:h-[200px] xl:h-[120px] bg-violet-900 blur-[120px] xl:blur-[160px] rounded-full"></div>
+          <div className="bg-shape5 w-[50px]  xl:w-[400px] h-[300px] lg:h-[200px] xl:h-[120px] bg-violet-400 blur-[180px] xl:blur-[160px] rounded-full"></div>
+          <div className="bg-shape6 w-[150px] xl:w-[400px] h-[300px] lg:h-[200px] xl:h-[120px] bg-purple-900 blur-[120px] xl:blur-[160px] rounded-full"></div>
         </div>
       </div>
-      <div className="overflow-hidden mt-4 rounded-t-2xl z-10 text-foreground box-border outline-none shadow-medium transition-transform-background motion-reduce:transition-none border-transparent dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+      <div className="overflow-hidden rounded-t-2xl z-10 text-foreground box-border outline-none shadow-medium transition-transform-background motion-reduce:transition-none border-transparent dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
         <div className="container z-50 flex py-20 items-center justify-between flex-col gap-10 lg:flex-row lg:gap-0">
           <div>
             <h2 className={`lg:text-6xl z-50 ${title()}`}>

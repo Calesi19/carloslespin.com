@@ -10,7 +10,7 @@ import Resume from "./resume";
 // import { TabsFAQ } from "./faq";
 // import { BouncyCardsFeatures } from "./contact";
 import FooterBar from "./footer";
-import AccordionSolutions from "./about";
+// import AccordionSolutions from "./about";
 import React from "react";
 
 export default function Home(): React.JSX.Element {
@@ -18,7 +18,7 @@ export default function Home(): React.JSX.Element {
     <div>
       <Hero />
       <DoubleScrollingLogos />
-      <AccordionSolutions />
+
       <CardCarousel />
       <Resume />
       <FooterBar />
@@ -28,10 +28,13 @@ export default function Home(): React.JSX.Element {
 
 function Hero(): React.JSX.Element {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <span className="absolute -top-[250px] left-[50%] z-0 h-[500px] w-[600px] max-w-[100vw] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
-      <span className="absolute -top-[250px] left-[50%] z-0 h-[500px] w-[600px] max-w-[100vw] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
-
+    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 overflow-hidden">
+      <div className="overflow-hidden">
+        <div className="w-full overflow-hidden">
+          <span className="absolute -top-[250px] left-[50%] z-0 h-[500px] w-[600px] max-w-[100vw] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
+          <span className="absolute -top-[250px] left-[50%] z-0 h-[500px] w-[600px] max-w-[100vw] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
+        </div>
+      </div>
       <div className="inline-block max-w-lg text-center justify-center">
         <div className=" flex items-center justify-center">
           <Image
