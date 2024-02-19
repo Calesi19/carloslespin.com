@@ -18,8 +18,7 @@ export default function Home() {
 			<DoubleScrollingLogos />
 			<AccordionSolutions/>
 			<CardCarousel />
-			<AccordionSolutions/>
-
+			<Resume />
 			<Footer />
 		</div>
 	);
