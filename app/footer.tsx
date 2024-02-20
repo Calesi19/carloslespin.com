@@ -26,7 +26,7 @@ export const FooterBar = (): React.JSX.Element => {
 
           <div>
             <a className="md:hidden" href="tel:+17879889447">
-              <button className="hover:scale-105 hover:border-[#56ff59] active:bg-[#56ff59] w-[300px] border-4 border-[#EAEAEA]  text-xl mt-4 py-3 px-10 rounded-full text-white transition duration-300 active:duration-0  flex items-center gap-4">
+              <button className="hover:scale-105 button-shadow1 hover:border-[#56ff59] active:bg-[#56ff59] w-[300px] border-4 border-[#EAEAEA]  text-xl mt-4 py-3 px-10 rounded-full text-white transition duration-300 active:duration-0  flex items-center gap-4">
                 <svg
                   className="w-[32px] h-[32px]"
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ export const FooterBar = (): React.JSX.Element => {
             </a>
 
             <a href="mailto:carlos.lespin.silva@gmail.com">
-              <button className="hover:scale-105 hover:border-[#ffcc56] active:bg-[#ffcc56] w-[300px] border-4 border-[#EAEAEA]  text-xl mt-4 py-3 px-10 rounded-full text-white transition duration-300 active:duration-0  flex items-center gap-4">
+              <button className="hover:scale-105 button-shadow2 hover:border-[#ffcc56] active:bg-[#ffcc56] w-[300px] border-4 border-[#EAEAEA]  text-xl mt-4 py-3 px-10 rounded-full text-white transition duration-300 active:duration-0  flex items-center gap-4">
                 <svg
                   className="w-[32px] h-[32px]"
                   xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ export const FooterBar = (): React.JSX.Element => {
             </a>
 
             <a href="https://www.linkedin.com/in/calesi19/">
-              <button className="hover:scale-105 hover:border-[#5f95eb] active:bg-[#5f95eb] w-[300px] border-4 border-[#EAEAEA]  text-xl mt-4 py-3 px-10 rounded-full text-white transition duration-300 active:duration-0  flex items-center gap-4">
+              <button className="hover:scale-105 button-shadow3 hover:border-[#5f95eb] active:bg-[#5f95eb] w-[300px] border-4 border-[#EAEAEA]  text-xl mt-4 py-3 px-10 rounded-full text-white transition duration-300 active:duration-0  flex items-center gap-4">
                 <svg
                   className="w-[32px] h-[24px]"
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@ export const FooterBar = (): React.JSX.Element => {
             </a>
 
             <a href="https://github.com/Calesi19">
-              <button className="hover:scale-105 hover:border-[#a55feb] active:bg-[#a55feb] w-[300px] border-4 border-[#EAEAEA]  text-xl mt-4 py-3 px-10 rounded-full text-white transition duration-300 active:duration-0 flex items-center gap-4">
+              <button className="hover:scale-105 button-shadow4 hover:border-[#a55feb] active:bg-[#a55feb] w-[300px] border-4 border-[#EAEAEA]  text-xl mt-4 py-3 px-10 rounded-full text-white transition duration-300 active:duration-0 flex items-center gap-4">
                 <svg
                   className="w-[32px] h-[24px]"
                   xmlns="http://www.w3.org/2000/svg"
