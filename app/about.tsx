@@ -132,7 +132,7 @@ function BackgroundBlur(): React.JSX.Element {
           className={`bg-shape2 w-1/4 xl:w-[400px] h-[400px] bg-[#deaaff] ${style}`}
         ></span>
         <span
-          className={`bg-shape3 w-1/3 xl:w-[340px] h-[350px] bg-[#b8c0ff] ${style}`}
+          className={`bg-shape3 w-1/5 xl:w-[340px] h-[350px] bg-[#b8c0ff] ${style}`}
         ></span>
       </div>
     </div>
