@@ -40,7 +40,7 @@
     transform: translate3d(0px, 0px, 0);
   }
   25% {
-    transform: translate3d(100px, 370px, 0);
+    transform: translate3d(50px, 370px, 0);
   }
   50% {
     transform: translate3d(20px, 150px, 0);
@@ -59,7 +59,7 @@
     transform: translate3d(50px, 10px, 0);
   }
   50% {
-    transform: translate3d(100px, 50px, 0);
+    transform: translate3d(50px, 50px, 0);
   }
   75% {
     transform: translate3d(50px, 100px, 0);
@@ -69,13 +69,13 @@
 @keyframes three {
   0%,
   100% {
-    transform: translate3d(100px, 100px, 0);
+    transform: translate3d(50px, 50px, 0);
   }
   25% {
     transform: translate3d(50px, 10px, 0);
   }
   50% {
-    transform: translate3d(100px, 50px, 0);
+    transform: translate3d(50px, 50px, 0);
   }
   75% {
     transform: translate3d(50px, 100px, 0);
@@ -120,13 +120,13 @@
     transform: translate3d(0px, 0px, 0);
   }
   25% {
-    transform: translate3d(80px, 0px, 0);
+    transform: translate3d(40px, 0px, 0);
   }
   50% {
     transform: translate3d(20px, 0px, 0);
   }
   75% {
-    transform: translate3d(50px, 0px, 0);
+    transform: translate3d(40px, 0px, 0);
   }
 }
 

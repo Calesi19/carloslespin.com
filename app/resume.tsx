@@ -6,7 +6,7 @@ import { HiOutlineDocumentDownload } from "react-icons/hi";
 
 export default function Resume(): React.JSX.Element {
   return (
-    <section className="py-32 min-h-[800px] w-screen">
+    <section className="py-32 min-h-[800px] w-full">
       <div className="container">
         <h2 className="tracking-tight inline font-semibold text-4xl lg:text-6xl z-50">
           Download my{" "}
@@ -21,13 +21,7 @@ export default function Resume(): React.JSX.Element {
           .
         </h2>
       </div>
-      <div className="flex absolute w-screen justify-center">
-        <div className="inset-0 flex-row justify-center flex w-screen overflow-x-hidden">
-          <div className=" bg-shape1 w-[200px] h-[300px] bg-blue-400 opacity-50 blur-[90px] rounded-full over"></div>
-          <div className=" bg-shape2 w-[100px] lg:w-[400px] h-[400px] bg-red-400 opacity-50 blur-[90px] rounded-full"></div>
-          <div className=" bg-shape3 w-[340px] h-[350px] bg-purple-400 opacity-50 blur-[90px] rounded-full"></div>
-        </div>
-      </div>
+      <BackgroundBlur />
       <div className="container mt-16 flex gap-2">
         <div className="flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
           <div className="flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0">
@@ -83,5 +77,25 @@ export default function Resume(): React.JSX.Element {
         </div>
       </div>
     </section>
+  );
+}
+
+function BackgroundBlur(): React.JSX.Element {
+  const style = "opacity-50 blur-[90px] rounded-full";
+
+  return (
+    <div className="flex justify-center absolute w-full">
+      <div className="inset-0 flex-row justify-center container flex">
+        <span
+          className={`bg-shape1 w-1/4 h-[300px] bg-blue-400 ${style}`}
+        ></span>
+        <span
+          className={`bg-shape2 w-1/4 h-[400px] bg-red-400 ${style}`}
+        ></span>
+        <span
+          className={`bg-shape3 w-1/4 h-[350px] bg-purple-400 ${style}`}
+        ></span>
+      </div>
+    </div>
   );
 }

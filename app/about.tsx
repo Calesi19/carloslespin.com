@@ -9,14 +9,8 @@ const AccordionSolutions = (): React.JSX.Element => {
   const [open, setOpen] = useState(solutions[0].id);
   const imgSrc = solutions.find((s) => s.id === open)?.imgSrc;
   return (
-    <section className="overflow-hidden w-full my-16">
-      <div className="flex absolute justify-center h-[500px] ">
-        <div className="inset-0 flex-row justify-center w-full flex overflow-x-hidden">
-          <div className=" bg-shape1 w-[200px] h-[300px] bg-[#c0fdff] opacity-50 blur-[90px] rounded-full"></div>
-          <div className=" bg-shape2 w-[100px] lg:w-[400px] h-[400px] bg-[#deaaff] opacity-50 blur-[90px] rounded-full"></div>
-          <div className=" bg-shape3 w-[340px] h-[350px] bg-[#b8c0ff] opacity-50 blur-[90px] rounded-full"></div>
-        </div>
-      </div>
+    <section className="w-full my-16">
+      <BackgroundBlur />
       <div className="w-full container grid gap-8 grid-cols-1 lg:grid-cols-[1fr_350px] z-50">
         <div>
           <h3 className="text-4xl font-bold mb-8">About Me</h3>
@@ -40,7 +34,7 @@ const AccordionSolutions = (): React.JSX.Element => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             key={imgSrc}
-            className="bg-slate-300 rounded-2xl aspect-[4/3] lg:aspect-auto z-50"
+            className="bg-slate-300 rounded-2xl aspect-[4/3] lg:aspect-auto z-20"
             style={{
               backgroundImage: `url(${imgSrc})`,
               backgroundPosition: "center",
@@ -124,6 +118,26 @@ const Solution = ({
     </div>
   );
 };
+
+function BackgroundBlur(): React.JSX.Element {
+  const style = "opacity-50 blur-[90px] rounded-full";
+
+  return (
+    <div className="flex justify-center absolute w-full ">
+      <div className="flex-row justify-center w-full flex">
+        <span
+          className={`bg-shape1 w-1/3 xl:w-[200px] h-[300px] bg-[#c0fdff] ${style}`}
+        ></span>
+        <span
+          className={`bg-shape2 w-1/3 xl:w-[400px] h-[400px] bg-[#deaaff] ${style}`}
+        ></span>
+        <span
+          className={`bg-shape3 w-1/3 xl:w-[340px] h-[350px] bg-[#b8c0ff] ${style}`}
+        ></span>
+      </div>
+    </div>
+  );
+}
 
 export default AccordionSolutions;
 

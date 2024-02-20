@@ -12,13 +12,13 @@ import Resume from "./resume";
 import FooterBar from "./footer";
 // import AccordionSolutions from "./about";
 import React from "react";
+import AccordionSolutions from "./about";
 
 export default function Home(): React.JSX.Element {
   return (
     <div>
       <Hero />
       <DoubleScrollingLogos />
-
       <CardCarousel />
       <Resume />
       <FooterBar />
