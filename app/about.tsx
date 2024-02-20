@@ -103,7 +103,23 @@ const Solution = ({
           }}
           className="-ml-6 -mr-6 -mb-6 mt-4 py-2 rounded-b-md flex items-center justify-center gap-1 group transition-[gap]"
         >
-          <span>Learn more</span>
+          {
+            // If id is 1, show link to my resume. if id is 2, show a gif. If id is 3, show a gif.
+            index === 1 ? (
+              <a href="/resume.pdf" target="_blank">
+                Resume
+              </a>
+            ) : index === 2 ? (
+              <a href="/" target="_blank">
+                See Projects
+              </a>
+            ) : index === 3 ? (
+              <a href="/" target="_blank">
+                Contact Me
+              </a>
+            ) : null
+          }
+
           <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
         </motion.button>
       </motion.div>
