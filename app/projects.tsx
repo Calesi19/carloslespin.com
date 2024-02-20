@@ -193,4 +193,12 @@ const items: ItemType[] = [
     description: "Chess game written in C++.",
     link: "https://github.com/Calesi19/Timeshare-Pro-App",
   },
+  {
+    id: 8,
+    url: "/resume.png",
+    category: "Website",
+    title: "Svelte Portfolio",
+    description: "My first portfolio website. Built with SvelteKit.",
+    link: "https://carloslespin.com",
+  },
 ];
