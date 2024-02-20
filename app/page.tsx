@@ -19,6 +19,7 @@ export default function Home(): React.JSX.Element {
     <div>
       <Hero />
       <DoubleScrollingLogos />
+      <AccordionSolutions />
       <CardCarousel />
       <Resume />
       <FooterBar />
