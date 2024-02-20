@@ -43,7 +43,7 @@ const CardCarousel = (): React.JSX.Element => {
 
   return (
     <section ref={ref}>
-      <div className="relative overflow-hidden p-4 my-16">
+      <div className="relative overflow-hidden my-16">
         {/* CARDS */}
         <div className="mx-auto container">
           <div className="tracking-tight inline font-semibold text-4xl z-50">
