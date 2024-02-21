@@ -170,7 +170,7 @@ const items: ItemType[] = [
   },
   {
     id: 5,
-    url: "https://github.com/Calesi19/LockerHub/blob/main/doc/square.png?raw=true",
+    url: "https://github.com/Calesi19/LockerHub/blob/main/docs/square.png?raw=true",
     category: "Mobile",
     title: "LockerHub",
     description:
