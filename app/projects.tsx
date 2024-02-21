@@ -203,7 +203,7 @@ const items: ItemType[] = [
   },
   {
     id: 9,
-    url: "https://github.com/Calesi19/carloslespin.com/blob/main/docs/banner.png?raw=true",
+    url: "https://github.com/Calesi19/carloslespin.com/blob/main/docs/square.png?raw=true",
     category: "Website",
     title: "Portfolio",
     description: "This portfolio website. Built with React.",

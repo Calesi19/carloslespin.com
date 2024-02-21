@@ -15,17 +15,18 @@ interface Repo {
 
 const ProjectGrid = (): React.JSX.Element => {
   const [repos, setRepos] = useState<Repo[]>([]);
-
   const [isLoading, setIsLoading] = useState(true);
-
 
   useEffect(() => {
     const fetchData = async (): Promise<void> => {
       setIsLoading(true);
+      
       const response = await axios.get(
         "https://api.github.com/users/Calesi19/repos"
       );
-      const fetchBannerUrl = async (repoName: string): Promise<string | undefined> => {
+      const fetchBannerUrl = async (
+        repoName: string
+      ): Promise<string | undefined> => {
         const bannerExtensions = ["png", "webp", "gif", "jpeg"];
         for (const ext of bannerExtensions) {
           const url = `https://api.github.com/repos/Calesi19/${repoName}/contents/docs/banner.${ext}`;
@@ -35,7 +36,7 @@ const ProjectGrid = (): React.JSX.Element => {
               return response.data.download_url;
             }
           } catch (error) {
-            // Ignore errors and continue checking other extensions
+            return "https://i.redd.it/g38817mqb1361.png"; // Ignore errors and continue checking other extensions
           }
         }
         return undefined; // Fallback URL not found
@@ -47,7 +48,9 @@ const ProjectGrid = (): React.JSX.Element => {
           const bannerUrl = await fetchBannerUrl(repoName);
           return {
             html_url: repo.html_url,
-            bannerUrl: bannerUrl ?? "https://i0.wp.com/www.puresourcecode.com/wp-content/uploads/2022/11/github-wallpaper-scaled.jpeg?fit=2560%2C1440&ssl=1", // Fallback URL
+            bannerUrl:
+              bannerUrl ??
+              "https://i0.wp.com/www.puresourcecode.com/wp-content/uploads/2022/11/github-wallpaper-scaled.jpeg?fit=2560%2C1440&ssl=1", // Fallback URL
             name: repo.name,
             description: repo.description,
           };
@@ -78,7 +81,7 @@ const ProjectGrid = (): React.JSX.Element => {
                     <Image
                       isBlurred
                       radius="sm"
-                      className="w-full aspect-video"
+                      className="w-full aspect-video object-cover"
                       alt="NextUI hero Image"
                       fallbackSrc="https://via.placeholder.com/300x200"
                       src={repo.bannerUrl}
