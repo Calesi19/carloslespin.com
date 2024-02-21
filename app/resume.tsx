@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import "./mycomponent.css";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
 
 export default function Resume(): React.JSX.Element {

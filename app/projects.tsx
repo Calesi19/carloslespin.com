@@ -156,7 +156,7 @@ const items: ItemType[] = [
     url: "https://github.com/Calesi19/SQLibrarySystem/blob/main/docs/square.png?raw=true",
     category: "Database",
     title: "Library System",
-    description: "MySQL model of a library system with schema and data.",
+    description: "SQL model of a library system with schema and data.",
     link: "https://github.com/Calesi19/Timeshare-Pro-App",
   },
   {
@@ -200,5 +200,13 @@ const items: ItemType[] = [
     title: "Svelte Portfolio",
     description: "My first portfolio website. Built with SvelteKit.",
     link: "https://carloslespin.com",
+  },
+  {
+    id: 9,
+    url: "/5.png",
+    category: "Website",
+    title: "Portfolio",
+    description: "This portfolio website. Built with React.",
+    link: "/5.png",
   },
 ];

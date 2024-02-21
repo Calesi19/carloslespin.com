@@ -110,7 +110,7 @@ const Solution = ({
                 Resume
               </a>
             ) : index === 2 ? (
-              <a href="/" target="_blank">
+              <a href="/projects" target="_blank">
                 See Projects
               </a>
             ) : index === 3 ? (
