@@ -179,7 +179,7 @@ const items: ItemType[] = [
   },
   {
     id: 6,
-    url: "https://github.com/Calesi19/TypeSpace/blob/main/square.gif?raw=true",
+    url: "https://github.com/Calesi19/TypeSpace/blob/main/docs/square.gif?raw=true",
     category: "Game",
     title: "TypeSpace",
     description: "Typing game written in vanilla JavaScript.",
@@ -187,7 +187,7 @@ const items: ItemType[] = [
   },
   {
     id: 7,
-    url: "https://github.com/Calesi19/Chess/blob/main/demo.gif?raw=true",
+    url: "https://github.com/Calesi19/Chess/blob/main/docs/banner.gif?raw=true",
     category: "Game",
     title: "Chess",
     description: "Chess game written in C++.",
@@ -203,7 +203,7 @@ const items: ItemType[] = [
   },
   {
     id: 9,
-    url: "/5.png",
+    url: "https://github.com/Calesi19/carloslespin.com/blob/main/docs/banner.png?raw=true",
     category: "Website",
     title: "Portfolio",
     description: "This portfolio website. Built with React.",
