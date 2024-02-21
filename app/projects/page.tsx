@@ -78,7 +78,8 @@ const ProjectGrid = (): React.JSX.Element => {
               <Ripples className="hover:scale-105 transition-transform duration-1000">
                 <div className="w-auto bg-inherit border-none flex flex-col p-0 h-full text-left ">
                   <div className="w-full flex">
-                    <Image
+                  <Image
+                      loading="lazy"
                       isBlurred
                       radius="sm"
                       className="w-full aspect-video object-cover"
