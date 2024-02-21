@@ -20,7 +20,7 @@ const ProjectGrid = (): React.JSX.Element => {
   useEffect(() => {
     const fetchData = async (): Promise<void> => {
       setIsLoading(true);
-      
+
       const response = await axios.get(
         "https://api.github.com/users/Calesi19/repos"
       );
@@ -51,7 +51,7 @@ const ProjectGrid = (): React.JSX.Element => {
             bannerUrl:
               bannerUrl ??
               "https://i0.wp.com/www.puresourcecode.com/wp-content/uploads/2022/11/github-wallpaper-scaled.jpeg?fit=2560%2C1440&ssl=1", // Fallback URL
-            name: repo.name,
+            name: repoName.replace(/-/g, " "), // Replace dashes with spaces
             description: repo.description,
           };
         })
@@ -78,7 +78,7 @@ const ProjectGrid = (): React.JSX.Element => {
               <Ripples className="hover:scale-105 transition-transform duration-1000">
                 <div className="w-auto bg-inherit border-none flex flex-col p-0 h-full text-left ">
                   <div className="w-full flex">
-                  <Image
+                    <Image
                       loading="lazy"
                       isBlurred
                       radius="sm"
