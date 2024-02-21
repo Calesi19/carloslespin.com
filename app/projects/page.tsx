@@ -83,7 +83,7 @@ const ProjectGrid = (): React.JSX.Element => {
                       radius="sm"
                       className="w-full aspect-video object-cover"
                       alt="NextUI hero Image"
-                      fallbackSrc="https://via.placeholder.com/300x200"
+                      fallbackSrc="https://i0.wp.com/www.puresourcecode.com/wp-content/uploads/2022/11/github-wallpaper-scaled.jpeg?fit=2560%2C1440&ssl=1"
                       src={repo.bannerUrl}
                     />
                   </div>
