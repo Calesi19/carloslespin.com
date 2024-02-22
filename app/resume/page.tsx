@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
-'use client';
+"use client";
 
 import { title, subtitle } from "../../components/primitives";
 import React from "react";
@@ -34,7 +34,18 @@ function HeaderGrid(): React.JSX.Element {
       <div className="flex flex-col md:flex-row justify-between">
         <div>
           <h1 className={`${title()}`}>{Resume.name}</h1>
-          <div className={`mb-4 ${subtitle()}`}>{Resume.title}</div>
+          <div className={`${subtitle()}`}>{Resume.title}</div>
+          <div className="hidden md:block">
+            <Button variant="bordered" className="mr-1 ">
+              <HiDownload className="mr-2" />
+              Cover Letter
+            </Button>
+
+            <Button variant="bordered">
+              <HiDownload className="mr-2" />
+              Resume
+            </Button>
+          </div>
         </div>
         <div className="md:text-right mb-8 flex flex-col gap-1">
           <div>
@@ -57,49 +68,21 @@ function HeaderGrid(): React.JSX.Element {
                 Portfolio
               </Button>
             </ButtonGroup>
-            <ButtonGroup fullWidth className="md:hidden w-full md:w-auto">
-              <Button>
-                <SiLinkedin className="mr-2" />
-                LinkedIn
-              </Button>
-
-              <Button>
-                <SiGithub className="mr-2" />
-                GitHub
-              </Button>
-              <Button>
-                <HiCode className="mr-2" />
-                Portfolio
-              </Button>
-            </ButtonGroup>
           </div>
           <Snippet symbol>{Resume.email}</Snippet>
           <Snippet symbol>{Resume.phone}</Snippet>
         </div>
       </div>
-      <div>
-        <ButtonGroup fullWidth className="md:hidden mb-4 w-full md:w-auto">
-          <Button>
-            <HiDownload className="mr-2" />
-            Cover Letter
-          </Button>
+      <div className="md:hidden">
+        <Button variant="bordered" className="mb-1 w-full">
+          <HiDownload className="mr-2" />
+          Resume
+        </Button>
 
-          <Button>
-            <HiDownload className="mr-2" />
-            Resume
-          </Button>
-        </ButtonGroup>
-        <ButtonGroup className="hidden md:block mb-4 w-full md:w-auto">
-          <Button>
-            <HiDownload className="mr-2" />
-            Cover Letter
-          </Button>
-
-          <Button>
-            <HiDownload className="mr-2" />
-            Resume
-          </Button>
-        </ButtonGroup>
+        <Button variant="bordered" className="w-full">
+          <HiDownload className="mr-2" />
+          Cover Letter
+        </Button>
       </div>
     </section>
   );
