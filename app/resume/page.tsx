@@ -94,7 +94,7 @@ function ExperienceGrid(): React.JSX.Element {
       <h2 className="text-2xl font-bold">Experience</h2>
       <Divider className="my-4" />
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           {Resume.experience.map((exp, index) => (
             <div key={index}>
               <div className="text-lg font-bold">{exp.title}</div>
@@ -120,7 +120,7 @@ function AboutGrid(): React.JSX.Element {
       <h2 className="text-2xl font-bold">About</h2>
       <Divider className="my-4" />
       <div>
-        <p>{Resume.about}</p>
+        <p className="text-default-600">{Resume.about}</p>
       </div>
     </section>
   );
@@ -132,7 +132,7 @@ function EducationGrid(): React.JSX.Element {
       <h2 className="text-2xl font-bold">Education</h2>
       <Divider className="my-4" />
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           {Resume.education.map((edu, index) => (
             <div key={index}>
               <div className="text-lg font-bold">{edu.title}</div>
@@ -158,15 +158,15 @@ function SkillsGrid(): React.JSX.Element {
       <h2 className="text-2xl font-bold">Skills</h2>
       <Divider className="my-4" />
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col md:grid grid-cols-2 gap-6">
+        <div className="flex flex-col md:grid grid-cols-2 gap-2">
           {Resume.skills.map((skills, index) => (
-            <Card className="p-4" key={index}>
+            <Card className="p-1" key={index}>
               <CardHeader className="text-lg font-bold">
                 {skills.title}
               </CardHeader>
               <CardBody className="flex flex-row flex-wrap overscroll-contain">
                 {skills.items.map((item, index) => (
-                  <Chip key={index} className="m-1">
+                  <Chip size="lg" key={index} className="m-1">
                     {item}
                   </Chip>
                 ))}
