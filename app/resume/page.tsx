@@ -1,4 +1,6 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
+'use client';
+
 import { title, subtitle } from "../../components/primitives";
 import React from "react";
 import {
@@ -8,12 +10,12 @@ import {
   CardHeader,
   Chip,
   Button,
-	ButtonGroup,
+  ButtonGroup,
   Snippet,
 } from "@nextui-org/react";
 import { Resume } from "../../config/site";
 import { SiLinkedin, SiGithub } from "react-icons/si";
-import { HiCode } from "react-icons/hi";
+import { HiDownload, HiCode } from "react-icons/hi";
 export default function AboutPage(): React.JSX.Element {
   return (
     <div>
@@ -35,25 +37,67 @@ function HeaderGrid(): React.JSX.Element {
           <div className={`mb-4 ${subtitle()}`}>{Resume.title}</div>
         </div>
         <div className="md:text-right mb-8 flex flex-col gap-1">
+          <div>
+            <ButtonGroup className="hidden md:block w-full md:w-auto">
+              <Button
+                onClick={() =>
+                  window.open("https://www.linkedin.com/in/calesi19/", "_blank")
+                }
+              >
+                <SiLinkedin className="mr-2" />
+                LinkedIn
+              </Button>
+
+              <Button>
+                <SiGithub className="mr-2" />
+                GitHub
+              </Button>
+              <Button>
+                <HiCode className="mr-2" />
+                Portfolio
+              </Button>
+            </ButtonGroup>
+            <ButtonGroup fullWidth className="md:hidden w-full md:w-auto">
+              <Button>
+                <SiLinkedin className="mr-2" />
+                LinkedIn
+              </Button>
+
+              <Button>
+                <SiGithub className="mr-2" />
+                GitHub
+              </Button>
+              <Button>
+                <HiCode className="mr-2" />
+                Portfolio
+              </Button>
+            </ButtonGroup>
+          </div>
           <Snippet symbol>{Resume.email}</Snippet>
           <Snippet symbol>{Resume.phone}</Snippet>
         </div>
       </div>
-
       <div>
-        <ButtonGroup className="mb-4 w-full md:w-auto">
+        <ButtonGroup fullWidth className="md:hidden mb-4 w-full md:w-auto">
           <Button>
-            <SiLinkedin className="mr-2" />
-            LinkedIn
+            <HiDownload className="mr-2" />
+            Cover Letter
           </Button>
 
           <Button>
-            <SiGithub className="mr-2" />
-            GitHub
+            <HiDownload className="mr-2" />
+            Resume
           </Button>
+        </ButtonGroup>
+        <ButtonGroup className="hidden md:block mb-4 w-full md:w-auto">
           <Button>
-            <HiCode className="mr-2" />
-            Portfolio
+            <HiDownload className="mr-2" />
+            Cover Letter
+          </Button>
+
+          <Button>
+            <HiDownload className="mr-2" />
+            Resume
           </Button>
         </ButtonGroup>
       </div>
@@ -151,5 +195,3 @@ function SkillsGrid(): React.JSX.Element {
     </section>
   );
 }
-
-
