@@ -74,7 +74,12 @@ const ProjectGrid = (): React.JSX.Element => {
             </div>
           ))
         : repos.map((repo, index) => (
-            <a href={repo.html_url} key={index}>
+            <a
+              href={repo.html_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={index}
+            >
               <Ripples className="hover:scale-105 transition-transform duration-1000">
                 <div className="w-auto bg-inherit border-none flex flex-col p-0 h-full text-left ">
                   <div className="w-full flex">
