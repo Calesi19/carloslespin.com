@@ -106,7 +106,7 @@ const Solution = ({
           {
             // If id is 1, show link to my resume. if id is 2, show a gif. If id is 3, show a gif.
             index === 1 ? (
-              <a href="/resume.pdf" target="_blank">
+              <a href="/resume" target="_blank">
                 Resume
               </a>
             ) : index === 2 ? (

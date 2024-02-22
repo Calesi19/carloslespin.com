@@ -66,7 +66,7 @@ export const Resume = {
   links: {
     linkedin: "https://www.linkedin.com/in/calesi19/",
     github: "https://github.com/Calesi19",
-    portfolio: "https://www.linkedin.com/in/calesi19/",
+    portfolio: "https://www.carloslespin.com/",
   },
   experience: [
     {
@@ -107,7 +107,7 @@ export const Resume = {
   skills: [
     {
       title: "Frontend",
-      items: ["React", "Next.js", "Tailwind CSS", "Bootstrap"],
+      items: ["React", "Next.js", "Tailwind CSS", "Bootstrap", "Svelte"],
     },
     {
       title: "Backend",

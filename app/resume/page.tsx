@@ -16,6 +16,7 @@ import {
 import { Resume } from "../../config/site";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { HiDownload, HiCode } from "react-icons/hi";
+
 export default function AboutPage(): React.JSX.Element {
   return (
     <div>
@@ -51,19 +52,21 @@ function HeaderGrid(): React.JSX.Element {
           <div>
             <ButtonGroup className="hidden md:block w-full md:w-auto">
               <Button
-                onClick={() =>
-                  window.open("https://www.linkedin.com/in/calesi19/", "_blank")
-                }
+                onClick={() => window.open(Resume.links.linkedin, "_blank")}
               >
                 <SiLinkedin className="mr-2" />
                 LinkedIn
               </Button>
 
-              <Button>
+              <Button
+                onClick={() => window.open(Resume.links.github, "_blank")}
+              >
                 <SiGithub className="mr-2" />
                 GitHub
               </Button>
-              <Button>
+              <Button
+                onClick={() => window.open(Resume.links.portfolio, "_blank")}
+              >
                 <HiCode className="mr-2" />
                 Portfolio
               </Button>
