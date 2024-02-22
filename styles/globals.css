@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+.navfix {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0/* 16px */;
+    padding-left: 0/* 16px */;
+}
+@media (min-width: 100%) {
+    .navfix {
+        max-width: 100%;
+        padding-right: calc(2rem - 24px)/* 32px */;
+        padding-left: calc(2rem - 24px)/* 32px */;
+    }
+}
+@media (min-width: 1024px) {
+    .navfix {
+        max-width: 1024px;
+        padding-right: calc(4rem - 24px)/* 64px */;
+        padding-left: calc(4rem - 24px)/* 64px */;
+    }
+}
+@media (min-width: 1280px) {
+    .navfix {
+        max-width: 1280px;
+        padding-right: 56px/* 80px */;
+        padding-left: 56px/* 80px */;
+    }
+}
+
 .bg-shape1,
 .bg-shape2,
 .bg-shape3,

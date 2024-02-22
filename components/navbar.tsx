@@ -53,9 +53,14 @@ function Logo(): React.JSX.Element {
 
 export const Navbar = (): React.JSX.Element => {
   return (
-    <NextUINavbar shouldHideOnScroll maxWidth="xl" position="sticky">
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand as="li" className="gap-3 max-w-fit">
+    <NextUINavbar
+      shouldHideOnScroll
+      position="sticky"
+      maxWidth="full"
+      className="navfix"
+    >
+      <NavbarContent className="basis-full" justify="start">
+        <NavbarBrand as="li" className="max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Logo />
           </NextLink>
@@ -109,22 +114,12 @@ export const Navbar = (): React.JSX.Element => {
       </NavbarContent>
 
       <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2">
+        <div className="mx-4 mt-2 grid grid-cols-2 gap-2 bg-blue-300 ">
           {siteConfig.navMenuItems.map((item, index) => (
             // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-                }
-                href="#"
-                size="lg"
-              >
-                {item.label}
+            <NavbarMenuItem className="w-full" key={`${item}-${index}`}>
+              <Link href="#">
+                <div className="p-8 w-full bg-green-400"></div>
               </Link>
             </NavbarMenuItem>
           ))}
