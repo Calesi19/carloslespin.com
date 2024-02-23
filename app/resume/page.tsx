@@ -5,13 +5,12 @@ import { title, subtitle } from "../../components/primitives";
 import React from "react";
 import {
   Divider,
-  Card,
-  CardBody,
-  CardHeader,
   Chip,
   Button,
   ButtonGroup,
   Snippet,
+  Tab,
+  Tabs,
 } from "@nextui-org/react";
 import { Resume } from "../../config/site";
 import { SiLinkedin, SiGithub } from "react-icons/si";
@@ -155,6 +154,7 @@ function EducationGrid(): React.JSX.Element {
   );
 }
 
+/*
 function SkillsGrid(): React.JSX.Element {
   return (
     <section className="container mt-16">
@@ -177,6 +177,63 @@ function SkillsGrid(): React.JSX.Element {
             </Card>
           ))}
         </div>
+      </div>
+    </section>
+  );
+}
+*/
+
+function SkillsGrid(): React.JSX.Element {
+  return (
+    <section className="container mt-16 min-h-[600px] md:min-h-[300px]">
+      <h2 className="text-2xl font-bold">Skills</h2>
+      <Divider className="my-4" />
+      <div className="flex flex-col">
+        <Tabs
+          aria-label="Options"
+          color="primary"
+          variant="bordered"
+          className="flex flex-col"
+        >
+          <Tab
+            key="All"
+            title={
+              <div className="flex items-center space-x-2">
+                <span>All</span>
+              </div>
+            }
+          >
+            <div>
+              {Resume.skills.map((skills, index) => (
+                <span key={index}>
+                  {skills.items.map((item, index) => (
+                    <Chip key={index} className="mr-1 mb-2">
+                      {item}
+                    </Chip>
+                  ))}
+                </span>
+              ))}
+            </div>
+          </Tab>
+          {Resume.skills.map((skills, index) => (
+            <Tab
+              key={skills.title}
+              title={
+                <div className="flex items-center space-x-2">
+                  <span>{skills.title}</span>
+                </div>
+              }
+            >
+              <div>
+                {skills.items.map((item, index) => (
+                  <Chip key={index} className="mr-1 mb-2">
+                    {item}
+                  </Chip>
+                ))}
+              </div>
+            </Tab>
+          ))}
+        </Tabs>
       </div>
     </section>
   );

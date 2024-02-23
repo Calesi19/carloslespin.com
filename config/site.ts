@@ -111,7 +111,7 @@ export const Resume = {
     },
     {
       title: "Backend",
-      items: ["Next.js", "ExpressJs", "Django", "FastAPI"],
+      items: ["Next.js", "ExpressJs", "Django", "FastAPI", "Serverless Functions"],
     },
     {
       title: "Database",
