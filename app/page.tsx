@@ -43,7 +43,7 @@ function Hero(): React.JSX.Element {
             height={150}
             width={150}
             alt="NextUI hero Image"
-            src="/memoji-coding.png"
+            src="/memoji-coding.webp"
           />
         </div>
 

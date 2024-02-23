@@ -163,7 +163,7 @@ const solutions = [
     title: "⚡️ Carlos Lespin",
     description:
       "Software Engineering grad, working in IT and a software engineering internship. I'm all about learning new stuff and keeping up with the tech world.",
-    imgSrc: "/portrait.png",
+    imgSrc: "/portrait.webp",
   },
   {
     id: 2,
