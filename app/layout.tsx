@@ -5,6 +5,8 @@ import { fontSans } from "../config/fonts";
 import { Providers } from "./providers";
 import { Navbar } from "../components/navbar";
 import clsx from "clsx";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: {
