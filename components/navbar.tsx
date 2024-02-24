@@ -10,7 +10,8 @@ import {
   NavbarBrand,
   NavbarItem,
   NavbarMenuItem,
-} from "@nextui-org/navbar";
+  Button,
+} from "@nextui-org/react";
 import { Link } from "@nextui-org/link";
 import { useTheme } from "next-themes";
 import { link as linkStyles } from "@nextui-org/theme";
@@ -113,16 +114,65 @@ export const Navbar = (): React.JSX.Element => {
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarMenu>
-        <div className="mx-4 mt-2 grid grid-cols-2 gap-2 bg-blue-300 ">
-          {siteConfig.navMenuItems.map((item, index) => (
-            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-            <NavbarMenuItem className="w-full" key={`${item}-${index}`}>
-              <Link href="#">
-                <div className="p-8 w-full bg-green-400"></div>
+      <NavbarMenu className="pb-20">
+        <div className="mx-4 mt-2 flex flex-col gap-4">
+          Links
+          <NavbarMenuItem className="w-full">
+            <Link className="w-full text-white font-bold" href="/">
+              <Button fullWidth variant="bordered" size="lg">
+                Home
+              </Button>
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem className="w-full">
+            <Link className="w-full text-white font-bold" href="/projects">
+              <Button fullWidth variant="bordered" size="lg">
+                Projects
+              </Button>
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem className="w-full">
+            <Link className="w-full text-white font-bold" href="/resume">
+              <Button fullWidth variant="bordered" size="lg">
+                Resume
+              </Button>
+            </Link>
+          </NavbarMenuItem>
+        </div>
+        <div className="mx-4 mt-6 pb-20">
+          Socials
+          <div className="mt-2 grid grid-cols-2 gap-4">
+            <NavbarMenuItem className="w-full">
+              <Link
+                className="w-full text-white"
+                href={siteConfig.links.linkedin}
+              >
+                <div className="p-8 w-full flex justify-center rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500">
+                  <FaLinkedinIn className="text-2xl" />
+                </div>
               </Link>
             </NavbarMenuItem>
-          ))}
+            <NavbarMenuItem className="w-full">
+              <Link
+                className="w-full text-white"
+                href={siteConfig.links.github}
+              >
+                <div className="p-8 w-full flex justify-center rounded-xl bg-gradient-to-r from-purple-500 to-purple-900">
+                  <SiGithub className="text-2xl" />
+                </div>
+              </Link>
+            </NavbarMenuItem>
+            <NavbarMenuItem className="w-full">
+              <Link
+                className="w-full text-white"
+                href={siteConfig.links.discord}
+              >
+                <div className="p-8 w-full flex justify-center rounded-xl bg-gradient-to-r from-slate-500 to-slate-800">
+                  <SiDiscord className="text-2xl" />
+                </div>
+              </Link>
+            </NavbarMenuItem>
+          </div>
         </div>
       </NavbarMenu>
     </NextUINavbar>

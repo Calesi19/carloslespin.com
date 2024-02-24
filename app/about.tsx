@@ -9,7 +9,7 @@ const AccordionSolutions = (): React.JSX.Element => {
   const [open, setOpen] = useState(solutions[0].id);
   const imgSrc = solutions.find((s) => s.id === open)?.imgSrc;
   return (
-    <section className="w-full my-16">
+    <section className="w-full my-20 lg:my-16">
       <BackgroundBlur />
       <div className="w-full container grid gap-8 grid-cols-1 lg:grid-cols-[1fr_350px] z-50">
         <div>
