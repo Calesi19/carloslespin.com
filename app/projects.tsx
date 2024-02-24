@@ -58,6 +58,7 @@ const CardCarousel = (): React.JSX.Element => {
             {items.map((item) => {
               return <Card key={item.id} {...item} />;
             })}
+            
           </motion.div>
         </div>
 
@@ -200,5 +201,13 @@ const items: ItemType[] = [
     title: "Portfolio",
     description: "This portfolio website. Built with React.",
     link: "https://github.com/Calesi19/carloslespin.com",
+  },
+  {
+    id: 9,
+    url: "/projects.png",
+    category: "",
+    title: "See All Projects",
+    description: "Click here to check out more projects.",
+    link: "/projects",
   },
 ];
