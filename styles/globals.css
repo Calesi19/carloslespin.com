@@ -3,32 +3,32 @@
 @tailwind utilities;
 
 .navfix {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0/* 16px */;
-    padding-left: 0/* 16px */;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0 /* 16px */;
+  padding-left: 0 /* 16px */;
 }
 @media (min-width: 100%) {
-    .navfix {
-        max-width: 100%;
-        padding-right: calc(2rem - 24px)/* 32px */;
-        padding-left: calc(2rem - 24px)/* 32px */;
-    }
+  .navfix {
+    max-width: 100%;
+    padding-right: calc(2rem - 24px) /* 32px */;
+    padding-left: calc(2rem - 24px) /* 32px */;
+  }
 }
 @media (min-width: 1024px) {
-    .navfix {
-        max-width: 1024px;
-        padding-right: calc(4rem - 24px)/* 64px */;
-        padding-left: calc(4rem - 24px)/* 64px */;
-    }
+  .navfix {
+    max-width: 1024px;
+    padding-right: calc(4rem - 24px) /* 64px */;
+    padding-left: calc(4rem - 24px) /* 64px */;
+  }
 }
 @media (min-width: 1280px) {
-    .navfix {
-        max-width: 1280px;
-        padding-right: 56px/* 80px */;
-        padding-left: 56px/* 80px */;
-    }
+  .navfix {
+    max-width: 1280px;
+    padding-right: 56px /* 80px */;
+    padding-left: 56px /* 80px */;
+  }
 }
 
 .bg-shape1,
@@ -40,30 +40,38 @@
   position: relative;
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .bg-shape1 {
   animation: one 20s infinite;
+  -webkit-animation: one 20s infinite;
 }
 .bg-shape2 {
   animation: two 12s infinite;
+  -webkit-animation: two 12s infinite;
 }
 .bg-shape3 {
   animation: three 16s infinite;
+  -webkit-animation: three 16s infinite;
 }
 .bg-shape4 {
   animation: four 8s infinite;
+  -webkit-animation: four 8s infinite;
 }
 .bg-shape5 {
   animation: five 6s infinite;
+  -webkit-animation: five 6s infinite;
 }
 .bg-shape6 {
   animation: six 8s infinite;
+  -webkit-animation: six 8s infinite;
 }
 
 @media (min-width: 768px) {
   .bg-shape5 {
     animation: five 10s infinite;
+    -webkit-animation: five 10s infinite;
   }
 }
 
@@ -83,6 +91,22 @@
   }
 }
 
+@-webkit-keyframes one {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(50px, 370px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(20px, 150px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(50px, 100px, 0);
+  }
+}
+
 @keyframes two {
   0%,
   100% {
@@ -96,6 +120,22 @@
   }
   75% {
     transform: translate3d(50px, 100px, 0);
+  }
+}
+
+@-webkit-keyframes two {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(50px, 10px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(50px, 50px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(50px, 100px, 0);
   }
 }
 
@@ -114,7 +154,21 @@
     transform: translate3d(50px, 100px, 0);
   }
 }
-
+@-webkit-keyframes three {
+  0%,
+  100% {
+    -webkit-transform: translate3d(50px, 50px, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(50px, 10px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(50px, 50px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(50px, 100px, 0);
+  }
+}
 @keyframes four {
   0%,
   100% {
@@ -130,7 +184,21 @@
     transform: translate3d(-50px, 0px, 0);
   }
 }
-
+@-webkit-keyframes four {
+  0%,
+  100% {
+    -webkit-transform: translate3d(-300px, 0px, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(-140px, 0px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(-20px, 0px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(-50px, 0px, 0);
+  }
+}
 @keyframes five {
   0%,
   100% {
@@ -146,7 +214,21 @@
     transform: translate3d(-100px, 0px, 0);
   }
 }
-
+@-webkit-keyframes five {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(80px, 0px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(20px, 0px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(-100px, 0px, 0);
+  }
+}
 @keyframes six {
   0%,
   100% {
@@ -163,8 +245,25 @@
   }
 }
 
+@-webkit-keyframes six {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(40px, 0px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(20px, 0px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(40px, 0px, 0);
+  }
+}
+
 .logo-skew {
   transform: skew(-30deg);
+  -webkit-transform: skew(-30deg);
 }
 
 .button-shadow1:hover {
