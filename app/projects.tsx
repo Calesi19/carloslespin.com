@@ -149,7 +149,7 @@ const items: ItemType[] = [
     title: "Temples API",
     description:
       "A Django API for information of temples worldwide. Containerized using Docker.",
-    link: "https://github.com/Calesi19/Timeshare-Pro-App",
+    link: "https://github.com/Calesi19/Temples",
   },
   {
     id: 3,
@@ -157,7 +157,7 @@ const items: ItemType[] = [
     category: "Database",
     title: "Library System",
     description: "SQL model of a library system with schema and data.",
-    link: "https://github.com/Calesi19/Timeshare-Pro-App",
+    link: "https://github.com/Calesi19/SQLibrarySystem",
   },
   {
     id: 4,
@@ -166,7 +166,7 @@ const items: ItemType[] = [
     title: "TypeSwift",
     description:
       "A compact text-expander for creating shortcuts to reduce typing time.",
-    link: "https://github.com/Calesi19/Timeshare-Pro-App",
+    link: "https://github.com/Calesi19/TypeSwift",
   },
   {
     id: 5,
@@ -175,7 +175,7 @@ const items: ItemType[] = [
     title: "LockerHub",
     description:
       "Allows for locker rental transactions and also enables users to securely access their rented lockers. Built with Flutter.",
-    link: "https://github.com/Calesi19/Timeshare-Pro-App",
+    link: "https://github.com/Calesi19/LockerHub",
   },
   {
     id: 6,
@@ -183,7 +183,7 @@ const items: ItemType[] = [
     category: "Game",
     title: "TypeSpace",
     description: "Typing game written in vanilla JavaScript.",
-    link: "https://github.com/Calesi19/Timeshare-Pro-App",
+    link: "https://github.com/Calesi19/TypeSpace",
   },
   {
     id: 7,
@@ -191,22 +191,14 @@ const items: ItemType[] = [
     category: "Game",
     title: "Chess",
     description: "Chess game written in C++.",
-    link: "https://github.com/Calesi19/Timeshare-Pro-App",
+    link: "https://github.com/Calesi19/Chess",
   },
   {
     id: 8,
-    url: "/resume.png",
-    category: "Website",
-    title: "Svelte Portfolio",
-    description: "My first portfolio website. Built with SvelteKit.",
-    link: "https://carloslespin.com",
-  },
-  {
-    id: 9,
     url: "https://github.com/Calesi19/carloslespin.com/blob/main/docs/square.png?raw=true",
     category: "Website",
     title: "Portfolio",
     description: "This portfolio website. Built with React.",
-    link: "/5.png",
+    link: "https://github.com/Calesi19/carloslespin.com",
   },
 ];
