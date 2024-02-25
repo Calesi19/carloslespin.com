@@ -131,7 +131,7 @@ const Solution = ({
         }}
         className="absolute inset-0 z-10"
       />
-      <div className="absolute inset-0 z-0 rounded-2xl box-border outline-none shadow-medium transition-transform-background motion-reduce:transition-none border-transparent dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]" />
+      <div className="absolute inset-0 z-0 rounded-2xl box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-white/5 backdrop-saturate-[1.8] shadow-medium transition-transform-background motion-reduce:transition-none border-transparent dark:bg-default-400/10 backdrop-blur-lg" />
     </div>
   );
 };
