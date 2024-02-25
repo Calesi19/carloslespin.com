@@ -66,13 +66,13 @@ function BackgroundBlur(): React.JSX.Element {
     <div className="flex justify-center absolute w-full">
       <div className="inset-0 flex-row justify-center container flex">
         <span
-          className={`bg-shape1 w-1/4 h-[300px] bg-blue-200 dark:bg-blue-400 ${style}`}
+          className={`bg-shape1 w-1/4 h-[300px] bg-[#fafafa00] dark:bg-blue-400 ${style}`}
         ></span>
         <span
-          className={`bg-shape2 w-1/4 h-[400px] bg-red-200 dark:bg-red-400 ${style}`}
+          className={`bg-shape2 w-1/4 h-[400px] bg-[#fafafa00] dark:bg-red-400 ${style}`}
         ></span>
         <span
-          className={`bg-shape3 w-1/4 h-[350px] bg-purple-200 dark:bg-purple-400 ${style}`}
+          className={`bg-shape3 w-1/4 h-[350px] bg-[#fafafa00] dark:bg-purple-400 ${style}`}
         ></span>
       </div>
     </div>

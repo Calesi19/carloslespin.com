@@ -6,9 +6,9 @@ export const FooterBar = (): React.JSX.Element => {
     <footer className="overflow-hidden w-full">
       <div className="flex h-0 w-full justify-center z-0 absolute bottom-[300px] lg:bottom-[200px] xl:bottom-[120px]">
         <div className="inset-0 flex-row justify-center flex w-full">
-          <span className="bg-shape4 w-1/6 lg:w-[150px] xl:w-[400px] h-[300px] lg:h-[200px] xl:h-[120px] bg-violet-900 blur-[120px] xl:blur-[160px] rounded-full"></span>
-          <span className="bg-shape5 w-1/6 lg:w-[50px]  xl:w-[400px] h-[300px] lg:h-[200px] xl:h-[120px] bg-violet-400 blur-[180px] xl:blur-[160px] rounded-full"></span>
-          <span className="bg-shape6 w-1/6 lg:w-[150px] xl:w-[300px] h-[300px] lg:h-[200px] xl:h-[120px] bg-purple-900 blur-[120px] xl:blur-[160px] rounded-full"></span>
+          <span className="dark:bg-shape4 w-1/6 lg:w-[150px] xl:w-[400px] h-[300px] lg:h-[200px] xl:h-[120px] bg-[#fafafa00] dark:bg-violet-900 blur-[120px] xl:blur-[160px] rounded-full"></span>
+          <span className="dark:bg-shape5 w-1/6 lg:w-[50px]  xl:w-[400px] h-[300px] lg:h-[200px] xl:h-[120px] bg-[#fafafa00] dark:bg-violet-400 blur-[180px] xl:blur-[160px] rounded-full"></span>
+          <span className="dark:bg-shape6 w-1/6 lg:w-[150px] xl:w-[300px] h-[300px] lg:h-[200px] xl:h-[120px] bg-[#fafafa00] dark:bg-purple-900 blur-[120px] xl:blur-[160px] rounded-full"></span>
         </div>
       </div>
       <div className="overflow-hidden rounded-t-2xl z-10 text-foreground box-border outline-none shadow-medium transition-transform-background motion-reduce:transition-none border-transparent dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
