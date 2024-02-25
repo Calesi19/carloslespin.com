@@ -5,6 +5,7 @@ import { type Dispatch, type SetStateAction, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 
+
 const AccordionSolutions = (): React.JSX.Element => {
   const [open, setOpen] = useState(solutions[0].id);
   const imgSrc = solutions.find((s) => s.id === open)?.imgSrc;
