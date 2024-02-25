@@ -13,7 +13,6 @@ import {
   Button,
 } from "@nextui-org/react";
 import { Link } from "@nextui-org/link";
-import { useTheme } from "next-themes";
 import { link as linkStyles } from "@nextui-org/theme";
 import { siteConfig } from "../config/site";
 import NextLink from "next/link";
@@ -23,28 +22,21 @@ import { SiGithub, SiDiscord } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Logo(): React.JSX.Element {
-  const { theme } = useTheme();
   return (
     <div id="logo" className="h-[32px] w-[128px] relative font-bold">
       <div
         id="prll"
-        className={`h-[32px] w-[62px] logo-skew rounded-lg absolute left-[2px] ${
-          theme === "light" ? "bg-black" : "bg-white"
-        }`}
+        className={`h-[32px] w-[62px] logo-skew rounded-lg absolute left-[2px] bg-black dark:bg-white`}
       ></div>
       <span
         id="first-name"
-        className={`absolute top-[3px] left-[5px] text-[20.5px] ${
-          theme === "light" ? "text-white" : "text-black"
-        }`}
+        className={`absolute top-[3px] left-[5px] text-[20.5px] text-white dark:text-black `}
       >
         carlos
       </span>
       <span
         id="last-name absolute"
-        className={`absolute top-[3px] left-[65px] text-[20.5px] ${
-          theme === "light" ? "text-black" : "text-white"
-        }`}
+        className={`absolute top-[3px] left-[65px] text-[20.5px] dark:text-white`}
       >
         lespin
       </span>
