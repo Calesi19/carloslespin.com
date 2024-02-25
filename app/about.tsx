@@ -5,6 +5,7 @@ import { type Dispatch, type SetStateAction, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 
+
 const AccordionSolutions = (): React.JSX.Element => {
   const [open, setOpen] = useState(solutions[0].id);
   const imgSrc = solutions.find((s) => s.id === open)?.imgSrc;
@@ -67,7 +68,7 @@ const Solution = ({
       onClick={() => {
         setOpen(index);
       }}
-      className="p-0.5 rounded-lg relative overflow-hidden cursor-pointer"
+      className="p-0.5 rounded-lg relative cursor-pointer"
     >
       <motion.div
         initial={false}
@@ -79,9 +80,7 @@ const Solution = ({
         <div>
           <motion.p
             initial={false}
-            animate={{
-              color: isOpen ? "white" : "white",
-            }}
+            
             className="text-xl font-medium w-fit bg-clip-text"
           >
             {title}
@@ -130,7 +129,7 @@ const Solution = ({
         }}
         className="absolute inset-0 z-10"
       />
-      <div className="absolute inset-0 z-0 rounded-2xl box-border outline-none shadow-medium transition-transform-background motion-reduce:transition-none border-transparent dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]" />
+      <div className="absolute inset-0 z-0 rounded-2xl box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-white/5 backdrop-saturate-[1.8] shadow-medium transition-transform-background motion-reduce:transition-none border-transparent dark:bg-default-400/10 backdrop-blur-lg" />
     </div>
   );
 };
@@ -142,13 +141,13 @@ function BackgroundBlur(): React.JSX.Element {
     <div className="flex justify-center absolute w-full ">
       <div className="flex-row justify-center w-full flex">
         <span
-          className={`bg-shape1 w-1/4 xl:w-[200px] h-[300px] bg-[#c0fdff] ${style}`}
+          className={`bg-shape1 w-1/4 xl:w-[200px] h-[300px] bg-[#fafafa00] dark:bg-[#c0fdff] ${style}`}
         ></span>
         <span
-          className={`bg-shape2 w-1/4 xl:w-[400px] h-[400px] bg-[#deaaff] ${style}`}
+          className={`bg-shape2 w-1/4 xl:w-[400px] h-[400px] bg-[#fafafa00] dark:bg-[#deaaff] ${style}`}
         ></span>
         <span
-          className={`bg-shape3 w-1/5 xl:w-[340px] h-[350px] bg-[#b8c0ff] ${style}`}
+          className={`bg-shape3 w-1/5 xl:w-[340px] h-[350px] bg-[#fafafa00] dark:bg-[#b8c0ff] ${style}`}
         ></span>
       </div>
     </div>

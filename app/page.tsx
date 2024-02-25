@@ -32,8 +32,8 @@ function Hero(): React.JSX.Element {
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 overflow-hidden">
       <div className="overflow-hidden">
         <div className="w-full overflow-hidden">
-          <span className="absolute -top-[250px] left-[50%] z-0 h-[500px] w-[600px] max-w-[100vw] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
-          <span className="absolute -top-[250px] left-[50%] z-0 h-[500px] w-[600px] max-w-[100vw] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
+          <span className="absolute -top-[250px] left-[50%] z-0 h-[500px] w-[600px] max-w-[100vw] -translate-x-[50%] rounded-full dark:bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
+          <span className="absolute -top-[250px] left-[50%] z-0 h-[500px] w-[600px] max-w-[100vw] -translate-x-[50%] rounded-full dark:bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
         </div>
       </div>
       <div className="inline-block max-w-lg text-center justify-center">

@@ -281,3 +281,9 @@
 .button-shadow4:hover {
   box-shadow: 0px 0px 50px 0px #a55feb9f !important;
 }
+
+.light html,
+.light body,
+.light main {
+  background-color: #fafafa !important;
+}
