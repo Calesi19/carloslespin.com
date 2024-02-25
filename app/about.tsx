@@ -68,7 +68,7 @@ const Solution = ({
       onClick={() => {
         setOpen(index);
       }}
-      className="p-0.5 rounded-lg relative overflow-hidden cursor-pointer"
+      className="p-0.5 rounded-lg relative cursor-pointer"
     >
       <motion.div
         initial={false}
@@ -80,9 +80,7 @@ const Solution = ({
         <div>
           <motion.p
             initial={false}
-            animate={{
-              color: isOpen ? "white" : "white",
-            }}
+            
             className="text-xl font-medium w-fit bg-clip-text"
           >
             {title}

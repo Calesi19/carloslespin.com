@@ -283,6 +283,7 @@
 }
 
 .light html,
-.light body {
+.light body,
+.light main {
   background-color: #fafafa !important;
 }
