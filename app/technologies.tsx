@@ -1,6 +1,5 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import {
   SiMongodb,
@@ -77,13 +76,11 @@ const TranslateWrapper = ({
 };
 
 const LogoItem = ({ Icon }: { Icon: IconType }): React.JSX.Element => {
-  const { theme } = useTheme();
   return (
     <a
       rel="nofollow"
       target="_blank"
-      className="w-16 md:w-24 h-16 md:h-24 flex justify-center items-center text-white transition-colors"
-      style={{ color: theme === "light" ? "black" : "white" }} // Change the color based on the theme
+      className="w-16 md:w-24 h-16 md:h-24 flex justify-center items-center transition-colors"
     >
       <span className="absolute w-16 md:w-24 h-16 md:h-24 flex justify-center items-center rounded-full blur-3xl opacity-90 text-white transition-colors" />
       <Icon className="text-4xl md:text-5xl" />
