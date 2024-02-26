@@ -5,7 +5,6 @@ import { type Dispatch, type SetStateAction, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 
-
 const AccordionSolutions = (): React.JSX.Element => {
   const [open, setOpen] = useState(solutions[0].id);
   const imgSrc = solutions.find((s) => s.id === open)?.imgSrc;
@@ -176,7 +175,7 @@ const solutions = [
     id: 3,
     title: "👀  I want to join your team.",
     description:
-      "I'm looking for a permenant position where I take on some leadership, and help out the team. I'm all about contributing and not just being a bystander. I'm eager to find a role that challenges me and lets me keep learning and doing cool stuff.",
+      "I'm looking for a permanent position where I can take on some leadership, and help out the team. I'm all about contributing and not just being a bystander. I'm eager to find a role that challenges me and lets me keep learning and doing cool stuff.",
     imgSrc:
       "https://media1.giphy.com/media/VkMV9TldsPd28/giphy.gif?cid=ecf05e478ipd21u861g034loyqpc66eseytcl7lzjbk1wqrh&ep=v1_gifs_search&rid=giphy.gif&ct=g",
   },
