@@ -43,17 +43,27 @@ export default function Resume(): React.JSX.Element {
         </div>
       </div>
       <BackgroundBlur />
-      <div className="container mt-16 flex flex-row gap-4 justify-between">
-        <EvervaultCard className="h-[300px]" text="Frontend" />
-        <EvervaultCard />
-        <EvervaultCard />
-        <a href="/resume">
-          <div className="h-[300px] px-4 flex flex-col justify-center items-center relative overflow-hidden text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
-            <FaSquareArrowUpRight className="text-3xl" />
-            <br />
-            <span className="text-3xl font-bold">More</span>
+      <div className="container mt-16 flex flex-col lg:flex-row gap-4 justify-between">
+        <EvervaultCard className="h-[300px] w-full">
+          <div className="p-8">
+            <div className="text-4xl mb-4">Experience</div>
+            <div>Software Engineering Intern</div>
           </div>
-        </a>
+        </EvervaultCard>
+        <EvervaultCard className="h-[300px] w-full">
+          <div className="p-8">
+            <span className="text-4xl mb-4">Education</span>
+            <p>Software Engineer Intern</p>
+            <p>4Human Co.</p>
+          </div>
+        </EvervaultCard>
+        <EvervaultCard className="h-[300px] w-full">
+          <div className="p-8">
+            <span className="text-4xl mt-4">Skills</span>
+            <p>Software Engineer Intern</p>
+            <p>4Human Co.</p>
+          </div>
+        </EvervaultCard>
       </div>
     </section>
   );
@@ -79,10 +89,4 @@ function BackgroundBlur(): React.JSX.Element {
   );
 }
 
-export function EvervaultCardDemo() {
-  return (
-    <div className=" flex flex-col max-w-sm relative">
-      <EvervaultCard text="See More" />
-    </div>
-  );
-}
+
