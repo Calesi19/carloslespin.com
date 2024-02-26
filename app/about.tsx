@@ -80,7 +80,6 @@ const Solution = ({
         <div>
           <motion.p
             initial={false}
-            
             className="text-xl font-medium w-fit bg-clip-text"
           >
             {title}
@@ -113,13 +112,14 @@ const Solution = ({
                 See Projects
               </a>
             ) : index === 3 ? (
-              <a href="/" target="_blank">
+              <a className="hidden" href="/resume">
                 Contact Me
               </a>
             ) : null
           }
-
-          <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
+          {index === 3 ? null : (
+            <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
+          )}
         </motion.button>
       </motion.div>
       <motion.div
@@ -161,14 +161,14 @@ const solutions = [
     id: 1,
     title: "⚡️ Carlos Lespin",
     description:
-      "Software Engineering grad, working in IT and a software engineering internship. I'm all about learning new stuff and keeping up with the tech world.",
+      "I'm a Software Engineer, born and raised in Puerto Rico. I have a bachelor's degree in Software Engineering and I'm aspiring to become a worthy professional in the field.",
     imgSrc: "/portrait.webp",
   },
   {
     id: 2,
     title: "💻 I Code Everyday.",
     description:
-      "I'm good at Frontend stuff, but I'm also diving into Backend and Cloud engineering. Oh, and I'm working on getting my AWS certs to level up my cloud game. I'm on the hunt for a permanent gig where I can really make a difference.",
+      "From front to back, I'm a big fan of programming. I've been coding for years and I love learning everything I can about it. I'm looking forward to new projects and challenges.",
     imgSrc:
       "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXJqbHp4YnlreWYyYWJiam16ZDd5eGZyeGk4MXRzM2tiYzRheTZkMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JIX9t2j0ZTN9S/giphy.gif",
   },
@@ -176,7 +176,7 @@ const solutions = [
     id: 3,
     title: "👀  I want to join your team.",
     description:
-      "I'm looking for a place where I can grow, take on some leadership, and help out the team. I'm all about contributing and not just being a bystander. I'm eager to find a role that challenges me and lets me keep learning and doing cool stuff.",
+      "I'm looking for a permenant position where I take on some leadership, and help out the team. I'm all about contributing and not just being a bystander. I'm eager to find a role that challenges me and lets me keep learning and doing cool stuff.",
     imgSrc:
       "https://media1.giphy.com/media/VkMV9TldsPd28/giphy.gif?cid=ecf05e478ipd21u861g034loyqpc66eseytcl7lzjbk1wqrh&ep=v1_gifs_search&rid=giphy.gif&ct=g",
   },

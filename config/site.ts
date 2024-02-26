@@ -60,7 +60,7 @@ export const Resume = {
   name: "Carlos Lespin",
   title: "Junior Software Engineer",
   about:
-    " I am a Software Engineering student at Brigham Young University - Idaho. I am passionate about web development and creating impactful websites. I am currently working as a Software Engineer Intern at 4Human Co, where I specialize in creating impactful websites for human rights advocacy in Africa using React, Express.Js, and AWS. I am also a Network",
+    "As a recent Software Engineering graduate, I bring a blend of front-end expertise and a growing proficiency in back-end and cloud engineering. Currently based in Florida, I am enhancing my skills through an IT job and a software engineering internship while pursuing AWS certifications. My passion lies in contributing to team success, taking on leadership roles, and continuously learning to fill knowledge gaps. With a commitment to coding daily and a keen interest in joining a collaborative team, I am excited to apply my skills and adapt quickly to new technologies.",
   email: "carlos.lespin.silva@gmail.com",
   phone: "787-988-9447",
   links: {
@@ -81,9 +81,17 @@ export const Resume = {
       title: "Network Operation Specialist",
       company: "TransCore",
       date: "Oct 2023 - Jan 2024",
-      location: "Remote",
+      location: "Orlando, Florida",
       description:
         "Monitored and analyzed Linux and Windows production servers, coordinating the dispatch of field service technicians. Addressed both software and hardware-related issues professionally with both internal and external customers. Recognized, researched, isolated, and resolved arising issues, escalating complex problems when necessary. Logged calls, maintained history records, and managed problem documentation. Ensured meticulous attention to detail in communication and system monitoring.",
+    },
+    {
+      title: "Technical Support Specialist / DP Team",
+      company: "BYU-Pathway Worldwide",
+      date: "Aug 2021 - Sep 2022",
+      location: "Salt Lake City, Utah",
+      description:
+        "Created a Python web scraper, boosting curriculum analysis efficiency by 10x. Specialized in troubleshooting BYU's semester planning software, contributing to enhanced system performance and student user experience. Collaborated closely with Technical Support and Development teams, ensuring accurate and efficient reporting of system bugs.",
     },
   ],
   education: [
@@ -111,11 +119,26 @@ export const Resume = {
     },
     {
       title: "Backend",
-      items: ["Next.js", "ExpressJs", "Django", "FastAPI", "Serverless Functions"],
+      items: [
+        "Next.js",
+        "ExpressJs",
+        "Django",
+        "HTMX",
+        "FastAPI",
+        "Serverless Functions",
+      ],
     },
     {
       title: "Database",
-      items: ["SQL", "PostrgeSQL", "Firebase", "AWS RDS", "MySQL", "MongoDB"],
+      items: [
+        "SQL",
+        "PostrgeSQL",
+        "Firebase",
+        "AWS RDS",
+        "MySQL",
+        "MongoDB",
+        "HTMX",
+      ],
     },
     {
       title: "DevOps",
