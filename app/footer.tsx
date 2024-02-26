@@ -6,7 +6,7 @@ import { AiOutlineMessage } from "react-icons/ai";
 
 export const FooterBar = (): React.JSX.Element => {
   return (
-    <footer id="#contact" className=" w-full">
+    <footer id="#contact" className=" w-full mt-16">
       <div className="flex h-0 w-full justify-center z-0 absolute bottom-[300px] lg:bottom-[200px] xl:bottom-[120px]">
         <div className="inset-0 flex-row justify-center flex w-full">
           <span className="dark:bg-shape4 w-1/6 lg:w-[150px] xl:w-[400px] h-[300px] lg:h-[200px] xl:h-[120px] bg-[#fafafa00] dark:bg-violet-900 blur-[120px] xl:blur-[160px] rounded-full"></span>

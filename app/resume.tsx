@@ -10,7 +10,7 @@ import { Button, ButtonGroup, Link } from "@nextui-org/react";
 
 export default function Resume(): React.JSX.Element {
   return (
-    <section className="py-32 min-h-[800px] w-full">
+    <section className="py-16 min-h-[400px] w-full">
       <div className="container flex flex-col md:flex-row justify-between">
         <div>
           <h2 className="tracking-tight inline font-semibold text-4xl lg:text-6xl z-50">
@@ -28,6 +28,7 @@ export default function Resume(): React.JSX.Element {
         </div>
         <div className="flex items-end gap-4">
           <ButtonGroup
+            fullWidth
             className="w-full md:w-auto mt-8"
             radius="full"
             variant="flat"
@@ -52,7 +53,7 @@ export default function Resume(): React.JSX.Element {
         </div>
       </div>
       <BackgroundBlur />
-      <div className="container mt-16 flex flex-col lg:flex-row gap-4 justify-between">
+      <div className="container mt-8 md:mt-16 flex flex-col lg:flex-row gap-4 justify-between">
         <EvervaultCard className="h-[300px] w-full">
           <div className="p-8 h-full w-full aspect-auto">
             <div className="text-4xl mb-4">Experience</div>
