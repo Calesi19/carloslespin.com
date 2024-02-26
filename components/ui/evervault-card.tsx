@@ -67,6 +67,7 @@ export function CardPattern({ mouseX, mouseY, randomString }: any) {
         className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-100 to-red-100 dark:from-blue-900 dark:to-red-900 opacity-0  group-hover/card:opacity-50 backdrop-blur-xl transition duration-500"
         style={style}
       />
+
       <motion.div
         className="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay group-hover/card:opacity-100  dark:group-hover/card:opacity-30"
         style={style}
@@ -88,5 +89,3 @@ export const generateRandomString = (length: number) => {
   }
   return result;
 };
-
-
