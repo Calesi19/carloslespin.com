@@ -3,8 +3,8 @@
 
 import React from "react";
 import { HiDownload } from "react-icons/hi";
-import { FaStar, FaCode } from "react-icons/fa6";
-import { MdDesignServices } from "react-icons/md";
+import { FaStar, FaCode, FaSitemap } from "react-icons/fa6";
+import { downloadCoverLetter, downloadResume } from "../utils/downloadFiles";
 import { EvervaultCard } from "../components/ui/evervault-card";
 import { Button, ButtonGroup, Link } from "@nextui-org/react";
 
@@ -32,11 +32,19 @@ export default function Resume(): React.JSX.Element {
             radius="full"
             variant="flat"
           >
-            <Button>
+            <Button
+              onPress={() => {
+                downloadResume();
+              }}
+            >
               <HiDownload className="mr-2" />
               Resume
             </Button>
-            <Button>
+            <Button
+              onPress={(): void => {
+                downloadCoverLetter();
+              }}
+            >
               <HiDownload className="mr-2" />
               Cover Letter
             </Button>
@@ -67,19 +75,13 @@ export default function Resume(): React.JSX.Element {
               Bachelor&apos;s Degree in Software Engineering
             </div>
             <ul>
-              <li
-                className="mb-4 flex items-center"
-                
-              >
-                <MdDesignServices className="mr-4 " />
-                Software Design: algorithms, data structures, OOP,
-                and architecture.
+              <li className="mb-4 flex items-center">
+                <FaSitemap className="mr-4 lg:w-8" />
+                Software Design: Algorithms, Data Structures, OOP, &
+                Architecture.
               </li>
-              <li
-                className=" flex items-center"
-                
-              >
-                <FaCode className="mr-4" />
+              <li className=" flex items-center">
+                <FaCode className="mr-4 w-4" />
                 Self-taught Web Development.
               </li>
             </ul>
@@ -119,6 +121,8 @@ export default function Resume(): React.JSX.Element {
     </section>
   );
 }
+
+
 
 function BackgroundBlur(): React.JSX.Element {
   const style = "opacity-50 blur-[90px] rounded-full";

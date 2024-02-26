@@ -15,6 +15,7 @@ import {
 import { Resume } from "../../config/site";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { HiDownload, HiCode } from "react-icons/hi";
+import { downloadCoverLetter, downloadResume } from "../../utils/downloadFiles";
 
 export default function AboutPage(): React.JSX.Element {
   return (
@@ -36,12 +37,16 @@ function HeaderGrid(): React.JSX.Element {
           <h1 className={`${title()}`}>{Resume.name}</h1>
           <div className={`${subtitle()}`}>{Resume.title}</div>
           <div className="hidden md:block">
-            <Button variant="bordered" className="mr-1 ">
+            <Button onPress={() => {
+                downloadCoverLetter();
+              }} variant="bordered" className="mr-1 ">
               <HiDownload className="mr-2" />
               Cover Letter
             </Button>
 
-            <Button variant="bordered">
+            <Button onPress={() => {
+                downloadResume();
+              }} variant="bordered">
               <HiDownload className="mr-2" />
               Resume
             </Button>

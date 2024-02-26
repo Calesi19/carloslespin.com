@@ -36,7 +36,7 @@ const ProjectGrid = (): React.JSX.Element => {
               return response.data.download_url;
             }
           } catch (error) {
-            return "https://i.redd.it/g38817mqb1361.png"; // Ignore errors and continue checking other extensions
+            return "/placeholder.webp"; // Ignore errors and continue checking other extensions
           }
         }
         return undefined; // Fallback URL not found

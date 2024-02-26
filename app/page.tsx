@@ -4,6 +4,7 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "../config/site";
 import { title, subtitle } from "../components/primitives";
 import { GithubIcon } from "../components/icons";
+import { FaLinkedinIn } from "react-icons/fa6";
 import CardCarousel from "./projects";
 import DoubleScrollingLogos from "./technologies";
 import Resume from "./resume";
@@ -67,7 +68,8 @@ function Hero(): React.JSX.Element {
             variant: "shadow",
           })}
         >
-          Contact Me
+          <FaLinkedinIn/>
+          Connect
         </Link>
         <Link
           isExternal
