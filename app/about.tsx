@@ -158,14 +158,14 @@ export default AccordionSolutions;
 const solutions = [
   {
     id: 1,
-    title: "⚡️ Carlos Lespin",
+    title: "Carlos Lespin",
     description:
       "I'm a Software Engineer, born and raised in Puerto Rico. I have a bachelor's degree in Software Engineering and I'm aspiring to become a worthy professional in the field.",
     imgSrc: "/portrait.webp",
   },
   {
     id: 2,
-    title: "💻 I Code Everyday.",
+    title: "I code everyday.",
     description:
       "From front to back, I'm a big fan of programming. I've been coding for years and I love learning everything I can about it. I'm looking forward to new projects and challenges.",
     imgSrc:
@@ -173,7 +173,7 @@ const solutions = [
   },
   {
     id: 3,
-    title: "👀  I want to join your team.",
+    title: "I want to join your team.",
     description:
       "I'm looking for a permanent position where I can take on some leadership, and help out the team. I'm all about contributing and not just being a bystander. I'm eager to find a role that challenges me and lets me keep learning and doing cool stuff.",
     imgSrc:
