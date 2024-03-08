@@ -27,7 +27,7 @@ const ProjectGrid = (): React.JSX.Element => {
       const fetchBannerUrl = async (
         repoName: string
       ): Promise<string | undefined> => {
-        const bannerExtensions = ["png", "webp", "gif", "jpeg"];
+        const bannerExtensions = [ "webp", "png", "gif", "jpeg"];
         for (const ext of bannerExtensions) {
           const url = `https://api.github.com/repos/Calesi19/${repoName}/contents/docs/banner.${ext}`;
           try {
