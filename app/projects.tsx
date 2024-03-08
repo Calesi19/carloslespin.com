@@ -136,7 +136,7 @@ interface ItemType {
 const items: ItemType[] = [
   {
     id: 1,
-    url: "https://github.com/Calesi19/Timeshare-Pro-App/blob/main/docs/5.png?raw=true",
+    url: "https://github.com/Calesi19/Timeshare-Pro-App/blob/main/docs/square.webp?raw=true",
     category: "Mobile",
     title: "Timeshare Pro",
     description:
@@ -145,7 +145,7 @@ const items: ItemType[] = [
   },
   {
     id: 2,
-    url: "https://github.com/Calesi19/Temples/blob/main/docs/square.png?raw=true",
+    url: "https://github.com/Calesi19/Temples/blob/main/docs/square.webp?raw=true",
     category: "Backend",
     title: "Temples API",
     description:
@@ -154,7 +154,7 @@ const items: ItemType[] = [
   },
   {
     id: 3,
-    url: "https://github.com/Calesi19/SQLibrarySystem/blob/main/docs/square.png?raw=true",
+    url: "https://github.com/Calesi19/SQLibrarySystem/blob/main/docs/square.webp?raw=true",
     category: "Database",
     title: "Library System",
     description: "SQL model of a library system with schema and data.",
@@ -162,7 +162,7 @@ const items: ItemType[] = [
   },
   {
     id: 4,
-    url: "https://github.com/Calesi19/TypeSwift/blob/main/docs/square.jpg?raw=true",
+    url: "https://github.com/Calesi19/TypeSwift/blob/main/docs/square.webp?raw=true",
     category: "Desktop",
     title: "TypeSwift",
     description:
@@ -171,7 +171,7 @@ const items: ItemType[] = [
   },
   {
     id: 5,
-    url: "https://github.com/Calesi19/LockerHub/blob/main/docs/square.png?raw=true",
+    url: "https://github.com/Calesi19/LockerHub/blob/main/docs/square.webp?raw=true",
     category: "Mobile",
     title: "LockerHub",
     description:
@@ -196,7 +196,7 @@ const items: ItemType[] = [
   },
   {
     id: 8,
-    url: "https://github.com/Calesi19/carloslespin.com/blob/main/docs/square.png?raw=true",
+    url: "https://github.com/Calesi19/carloslespin.com/blob/main/docs/square.webp?raw=true",
     category: "Website",
     title: "Portfolio",
     description: "This portfolio website. Built with React.",
