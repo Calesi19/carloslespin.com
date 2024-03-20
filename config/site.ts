@@ -71,6 +71,14 @@ export const Resume = {
   experience: [
     {
       title: "Software Engineer Intern",
+      company: "DMSi Software",
+      date: "Mar 2024 - Present",
+      location: "Minneapolis, Minnesota",
+      description:
+        "",
+    },
+    {
+      title: "Software Engineer Intern",
       company: "4Human Co",
       date: "Dec 2023 - Present",
       location: "Remote",
