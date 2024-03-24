@@ -51,10 +51,10 @@ function Hero(): React.JSX.Element {
         <h1 className={title()}>I&apos;m a&nbsp;</h1>
         <h1 className={title({ color: "violet" })}>Software Engineer&nbsp;</h1>
         <br />
-        <h1 className={title()}>available for internships.</h1>
+        <h1 className={title()}>available for hire.</h1>
 
         <h2 className={subtitle({ class: "mt-4" })}>
-          Crafting Beautiful, Fast, and Modern Applications.
+          .NET, TypeScript, Python, and Go.
         </h2>
       </div>
 
