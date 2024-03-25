@@ -128,7 +128,7 @@ export const Resume = {
     {
       title: "Backend",
       items: [
-        "Next.js",
+        ".NET",
         "ExpressJs",
         "Django",
         "HTMX",
@@ -154,7 +154,7 @@ export const Resume = {
     },
     {
       title: "Languages",
-      items: ["Python", "JavaScript", "C++", "Go", "Dart", "TypeScript"],
+      items: ["Python", "JavaScript", "C++", "Go", "Dart", "TypeScript, C#"],
     },
   ],
 };
