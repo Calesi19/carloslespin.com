@@ -75,7 +75,7 @@ export const Resume = {
       date: "Mar 2024 - Present",
       location: "Minneapolis, Minnesota",
       description:
-        "",
+        "Responsible for developing and implementing Web APIs in .NET for new features in ERP systems designed for the lumber industry, ensuring seamless integration and high-quality standards through collaboration with cross-functional teams and thorough testing.",
     },
     {
       title: "Software Engineer Intern",
