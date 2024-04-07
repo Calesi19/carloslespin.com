@@ -59,13 +59,13 @@ export default function Resume(): React.JSX.Element {
             <div className="text-4xl mb-4">Experience</div>
             <div>Software Engineering Intern</div>{" "}
             <div className="mb-4">
-              <div className="text-default-500">4Human Co.</div>
-              <div className="text-default-500">Dec 2023 - Present</div>
+              <div className="text-default-500">DMSi Software</div>
+              <div className="text-default-500">March 2024 - Present</div>
             </div>
-            <div>Product Support Technician</div>{" "}
+            <div>Software Engineering Intern</div>{" "}
             <div className="mb-4">
-              <div className="text-default-500">Transcore</div>
-              <div className="text-default-500">Oct 2023 - Jan 2024</div>
+              <div className="text-default-500">4Human Co.</div>
+              <div className="text-default-500">December 2023 - Present</div>
             </div>
           </div>
         </EvervaultCard>
