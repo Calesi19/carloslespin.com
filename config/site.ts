@@ -154,7 +154,7 @@ export const Resume = {
     },
     {
       title: "Languages",
-      items: ["Python", "JavaScript", "C++", "Go", "Dart", "TypeScript, C#"],
+      items: ["Python", "JavaScript", "C++", "Go", "Dart", "TypeScript", "C#"],
     },
   ],
 };
