@@ -24,6 +24,7 @@ import {
   SiCplusplus,
   SiFlutter,
   SiPostgresql,
+  SiDotnet
 } from "react-icons/si";
 import { type IconType } from "react-icons";
 
@@ -101,6 +102,7 @@ const LogoItemsTop = (): React.JSX.Element => (
     <LogoItem Icon={SiNodedotjs} />
     <LogoItem Icon={SiPython} />
     <LogoItem Icon={SiMongodb} />
+    <LogoItem Icon={SiDotnet} />
   </>
 );
 
