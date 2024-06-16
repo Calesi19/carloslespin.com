@@ -160,7 +160,7 @@ const solutions = [
     id: 1,
     title: "Carlos Lespin",
     description:
-      "I'm a Software Engineer, born and raised in Puerto Rico. I have a bachelor's degree in Software Engineering and I'm aspiring to become a worthy professional in the field.",
+      "I'm a Software Engineer, born and raised in Puerto Rico. I have a bachelor's degree in Software Engineering and I specialize in full-stack development.",
     imgSrc: "/portrait.webp",
   },
   {
