@@ -80,7 +80,7 @@ export const Resume = {
     {
       title: "Software Engineer Intern",
       company: "4Human Co",
-      date: "Dec 2023 - Present",
+      date: "Dec 2023 - Jun 2024",
       location: "Remote",
       description:
         "Web development, specializing in creating impactful websites for human rights advocacy in Africa using React, Express.Js, and AWS. Helped design and create a good UX/UI experience for an e-commerce website. Collaborated in the creation of Frontend components using React and Tailwind CSS. Developed server endpoints using ExpressJs, Prisma ORM, and PostgreSQL database.",

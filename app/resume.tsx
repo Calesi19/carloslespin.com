@@ -65,7 +65,7 @@ export default function Resume(): React.JSX.Element {
             <div>Software Engineering Intern</div>{" "}
             <div className="mb-4">
               <div className="text-default-500">4Human Co.</div>
-              <div className="text-default-500">December 2023 - Present</div>
+              <div className="text-default-500">December 2023 - Jun 2024</div>
             </div>
           </div>
         </EvervaultCard>
@@ -122,8 +122,6 @@ export default function Resume(): React.JSX.Element {
     </section>
   );
 }
-
-
 
 function BackgroundBlur(): React.JSX.Element {
   const style = "opacity-50 blur-[90px] rounded-full";
