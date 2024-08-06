@@ -54,7 +54,7 @@ function Hero(): React.JSX.Element {
         <h1 className={title()}>available for hire.</h1>
 
         <h2 className={subtitle({ class: "mt-4" })}>
-          .NET, TypeScript, Python, and Go.
+          .NET, TypeScript, and Go.
         </h2>
       </div>
 
@@ -68,7 +68,7 @@ function Hero(): React.JSX.Element {
             variant: "shadow",
           })}
         >
-          <FaLinkedinIn/>
+          <FaLinkedinIn />
           Connect
         </Link>
         <Link
