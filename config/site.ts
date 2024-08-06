@@ -58,7 +58,7 @@ export const siteConfig = {
 
 export const Resume = {
   name: "Carlos Lespin",
-  title: "Junior Software Engineer",
+  title: "Software Engineer",
   about:
     "As a recent Software Engineering graduate, I bring a blend of front-end expertise and a growing proficiency in back-end and cloud engineering. Currently based in Florida, I am enhancing my skills through an IT job and a software engineering internship while pursuing AWS certifications. My passion lies in contributing to team success, taking on leadership roles, and continuously learning to fill knowledge gaps. With a commitment to coding daily and a keen interest in joining a collaborative team, I am excited to apply my skills and adapt quickly to new technologies.",
   email: "carlos.lespin.silva@gmail.com",
