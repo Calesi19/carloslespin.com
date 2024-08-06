@@ -57,7 +57,7 @@ export default function Resume(): React.JSX.Element {
         <EvervaultCard className="h-[300px] w-full">
           <div className="p-8 h-full w-full aspect-auto">
             <div className="text-4xl mb-4">Experience</div>
-            <div>Software Engineering Intern</div>{" "}
+            <div>Software Engineer</div>{" "}
             <div className="mb-4">
               <div className="text-default-500">DMSi Software</div>
               <div className="text-default-500">March 2024 - Present</div>
