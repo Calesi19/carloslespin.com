@@ -60,7 +60,7 @@ export const Resume = {
   name: "Carlos Lespin",
   title: "Software Engineer",
   about:
-    "As a recent Software Engineering graduate, I bring a blend of front-end expertise and a growing proficiency in back-end and cloud engineering. Currently based in Florida, I am enhancing my skills through an IT job and a software engineering internship while pursuing AWS certifications. My passion lies in contributing to team success, taking on leadership roles, and continuously learning to fill knowledge gaps. With a commitment to coding daily and a keen interest in joining a collaborative team, I am excited to apply my skills and adapt quickly to new technologies.",
+    "Full stack engineer specializing in backend development with .NET and Go, also skilled in React and TypeScript. Based in Florida, looking for Cloud and Backend roles. Certified with a bachelor's degree and extensive experience. Passionate about coding, teamwork, and quickly adapting to new technologies.",
   email: "carlos.lespin.silva@gmail.com",
   phone: "787-988-9447",
   links: {
