@@ -70,9 +70,17 @@ export const Resume = {
   },
   experience: [
     {
+      title: "Software Engineer",
+      company: "DMSi Software",
+      date: "Aug 2024 - Present",
+      location: "Minneapolis, Minnesota",
+      description:
+        "Responsible for developing and implementing Web APIs in .NET for new features in ERP systems designed for the lumber industry, ensuring seamless integration and high-quality standards through collaboration with cross-functional teams and thorough testing.",
+    },
+    {
       title: "Software Engineer Intern",
       company: "DMSi Software",
-      date: "Mar 2024 - Present",
+      date: "Mar 2024 - Aug 2024",
       location: "Minneapolis, Minnesota",
       description:
         "Responsible for developing and implementing Web APIs in .NET for new features in ERP systems designed for the lumber industry, ensuring seamless integration and high-quality standards through collaboration with cross-functional teams and thorough testing.",
@@ -123,38 +131,23 @@ export const Resume = {
   skills: [
     {
       title: "Frontend",
-      items: ["React", "Next.js", "Tailwind CSS", "Bootstrap", "Svelte"],
+      items: ["React", "Next.js", "Tailwind CSS", "Bootstrap"],
     },
     {
       title: "Backend",
-      items: [
-        ".NET",
-        "ExpressJs",
-        "Django",
-        "HTMX",
-        "FastAPI",
-        "Serverless Functions",
-      ],
+      items: [".NET", "ExpressJs", "HTMX", "Serverless Functions"],
     },
     {
       title: "Database",
-      items: [
-        "SQL",
-        "PostrgeSQL",
-        "Firebase",
-        "AWS RDS",
-        "MySQL",
-        "MongoDB",
-        "HTMX",
-      ],
+      items: ["SQL", "Firestore", "AWS RDS", "MongoDB"],
     },
     {
       title: "DevOps",
-      items: ["Docker", "GitHub", "Markdown", "AWS", "Google Cloud"],
+      items: ["Docker", "GitHub", "CI/CD Pipelines", "AWS", "Google Cloud"],
     },
     {
       title: "Languages",
-      items: ["Python", "JavaScript", "C++", "Go", "Dart", "TypeScript", "C#"],
+      items: ["Python", "C++", "Go", "TypeScript", "C#"],
     },
   ],
 };
