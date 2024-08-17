@@ -60,7 +60,7 @@ export const Resume = {
   name: "Carlos Lespin",
   title: "Software Engineer",
   about:
-    "Full stack engineer specializing in backend development with .NET and Go, also skilled in React and TypeScript. Based in Florida, looking for Cloud and Backend roles. Certified with a bachelor's degree and extensive experience. Passionate about coding, teamwork, and quickly adapting to new technologies.",
+    "Full stack engineer specializing in backend development with .NET and Go, also skilled in React and TypeScript. Based in Minnesota, looking for Cloud and Backend roles. Certified with a bachelor's degree and extensive experience. Passionate about coding, teamwork, and quickly adapting to new technologies.",
   email: "carlos.lespin.silva@gmail.com",
   phone: "787-988-9447",
   links: {
