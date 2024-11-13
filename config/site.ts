@@ -70,7 +70,7 @@ export const Resume = {
   },
   experience: [
     {
-      title: "Software Engineer",
+      title: "Fullstack Software Engineer",
       company: "DMSi Software",
       date: "Aug 2024 - Present",
       location: "Minneapolis, Minnesota",
