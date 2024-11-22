@@ -143,7 +143,15 @@ export const Resume = {
     },
     {
       title: "DevOps",
-      items: ["Docker", "Git", "CI/CD Pipelines", "AWS", "Google Cloud"],
+      items: [
+        "Docker",
+        "Git",
+        "CI/CD Pipelines",
+        "AWS",
+        "Google Cloud",
+        "Vim",
+        "Linux",
+      ],
     },
     {
       title: "Languages",
