@@ -131,7 +131,7 @@ export const Resume = {
   skills: [
     {
       title: "Frontend",
-      items: ["React", "Next.js", "Tailwind CSS", "Bootstrap"],
+      items: ["React", "Next.js", "Tailwind CSS", "Bootstrap", "Blazor"],
     },
     {
       title: "Backend",
