@@ -114,7 +114,7 @@ function ExperienceGrid(): React.JSX.Element {
               </div>
               <p>{exp.description}</p>
 
-              {/*} create a bullet point list */}
+              {/* create a bullet point list */}
               <div className="flex flex-col gap-2">
                 {exp.bullets?.map((bullet: string, index) => (
                   <div key={index} className="flex flex-row gap-2">

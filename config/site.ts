@@ -102,24 +102,38 @@ export const Resume = {
       company: "4Human Co",
       date: "Dec 2023 - Jun 2024",
       location: "Remote",
-      description:
-        "Web development, specializing in creating impactful websites for human rights advocacy in Africa using React, Express.Js, and AWS. Helped design and create a good UX/UI experience for an e-commerce website. Collaborated in the creation of Frontend components using React and Tailwind CSS. Developed server endpoints using ExpressJs, Prisma ORM, and PostgreSQL database.",
+      description: null,
+      bullets: [
+        "Built websites for human rights advocacy using React, Express.js, and AWS.",
+        "Designed and implemented a user- friendly UX / UI for an e- commerce site.",
+        "Developed reusable frontend components with React and Tailwind CSS.",
+        "Created and optimized backend endpoints using Express.js, Prisma ORM, and PostgreSQL.",
+      ]
     },
     {
       title: "Network Operation Specialist",
       company: "TransCore",
       date: "Oct 2023 - Jan 2024",
       location: "Orlando, Florida",
-      description:
-        "Monitored and analyzed Linux and Windows production servers, coordinating the dispatch of field service technicians. Addressed both software and hardware-related issues professionally with both internal and external customers. Recognized, researched, isolated, and resolved arising issues, escalating complex problems when necessary. Logged calls, maintained history records, and managed problem documentation. Ensured meticulous attention to detail in communication and system monitoring.",
+      description: null,
+      bullets: [
+        "Monitored Linux and Windows production servers, ensuring system uptime and reliability.",
+        "Coordinated field technician dispatch and resolved hardware / software issues.",
+        "Diagnosed and escalated complex problems with detailed documentation.",
+        "Maintained comprehensive call logs and system performance records."
+      ]
     },
     {
       title: "Technical Support Specialist / DP Team",
       company: "BYU-Pathway Worldwide",
       date: "Aug 2021 - Sep 2022",
       location: "Salt Lake City, Utah",
-      description:
-        "Created a Python web scraper, boosting curriculum analysis efficiency by 10x. Specialized in troubleshooting BYU's semester planning software, contributing to enhanced system performance and student user experience. Collaborated closely with Technical Support and Development teams, ensuring accurate and efficient reporting of system bugs.",
+      description: null,
+      bullets: [
+        "Built a Python web scraper, improving curriculum analysis efficiency by 10x.",
+        "Troubleshot semester planning software, enhancing system performance.",
+        "Partnered with Technical Support and Development teams to address system bugs efficiently.",
+      ]
     },
   ],
   education: [
