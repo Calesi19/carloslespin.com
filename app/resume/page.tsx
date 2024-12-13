@@ -38,15 +38,15 @@ function HeaderGrid(): React.JSX.Element {
           <div className={`${subtitle()}`}>{Resume.title}</div>
           <div className="hidden md:block">
             <Button onPress={() => {
-                downloadCoverLetter();
-              }} variant="bordered" className="mr-1 ">
+              downloadCoverLetter();
+            }} variant="bordered" className="mr-1 ">
               <HiDownload className="mr-2" />
               Cover Letter
             </Button>
 
             <Button onPress={() => {
-                downloadResume();
-              }} variant="bordered">
+              downloadResume();
+            }} variant="bordered">
               <HiDownload className="mr-2" />
               Resume
             </Button>
@@ -113,6 +113,17 @@ function ExperienceGrid(): React.JSX.Element {
                 <div>{exp.date}</div>
               </div>
               <p>{exp.description}</p>
+
+              {/*} create a bullet point list */}
+              <div className="flex flex-col gap-2">
+                {exp.bullets?.map((bullet: string, index) => (
+                  <div key={index} className="flex flex-row gap-2">
+                    <div className="text-default-600">•</div>
+                    <div>{bullet}</div>
+                  </div>
+                ))}
+
+              </div>
             </div>
           ))}
         </div>

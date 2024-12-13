@@ -74,16 +74,28 @@ export const Resume = {
       company: "DMSi Software",
       date: "Aug 2024 - Present",
       location: "Minneapolis, Minnesota",
-      description:
-        "Responsible for developing and implementing Web APIs in .NET for new features in ERP systems designed for the lumber industry, ensuring seamless integration and high-quality standards through collaboration with cross-functional teams and thorough testing.",
+      description: null,
+      bullets: [
+        "Built scalable.NET Core APIs and designed optimized SQL and MongoDB database schemas.",
+        "Managed API deployments on IIS and Nginx servers.",
+        "Developed Blazor components and styled interfaces with Tailwind CSS.",
+        "Modernized legacy Visual Basic codebases through refactoring.",
+        "Implemented JWT - based authentication and authorization.",
+        "Automated internal workflows using Python scripts.",
+        "Utilized Docker for streamlined local development and production deployments."
+      ]
     },
     {
       title: "Software Engineer Intern",
       company: "DMSi Software",
       date: "Mar 2024 - Aug 2024",
       location: "Minneapolis, Minnesota",
-      description:
-        "Responsible for developing and implementing Web APIs in .NET for new features in ERP systems designed for the lumber industry, ensuring seamless integration and high-quality standards through collaboration with cross-functional teams and thorough testing.",
+      description: null,
+      bullets: [
+        "Developed REST APIs for seamless integration with third - party ERP systems.",
+        "Conducted robust unit and integration testing with XUnit.",
+        "Established CI/ CD pipelines for automated testing and deployment using TFS and GitLab CI/ CD."
+      ]
     },
     {
       title: "Software Engineer Intern",
