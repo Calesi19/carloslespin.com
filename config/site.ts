@@ -76,7 +76,7 @@ export const Resume = {
       location: "Minneapolis, Minnesota",
       description: null,
       bullets: [
-        "Built scalable.NET Core APIs and designed optimized SQL and MongoDB database schemas.",
+        "Built scalable .NET Core APIs and designed optimized SQL and MongoDB database schemas.",
         "Managed API deployments on IIS and Nginx servers.",
         "Developed Blazor components and styled interfaces with Tailwind CSS.",
         "Modernized legacy Visual Basic codebases through refactoring.",
