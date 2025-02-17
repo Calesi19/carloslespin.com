@@ -82,7 +82,8 @@ export const Resume = {
         "Modernized legacy Visual Basic codebases through refactoring.",
         "Implemented JWT - based authentication and authorization.",
         "Automated internal workflows using Python scripts.",
-        "Utilized Docker for streamlined local development and production deployments."
+        "Utilized Docker for streamlined local development and production deployments.",
+        "Implemented logging and monitoring for .NET microservices.",
       ]
     },
     {
