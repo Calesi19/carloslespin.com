@@ -70,45 +70,40 @@ export const Resume = {
   },
   experience: [
     {
-      title: "Fullstack Software Engineer",
+      title: "Full-Stack Software Engineer",
       company: "DMSi Software",
-      date: "Aug 2024 - Present",
-      location: "Minneapolis, Minnesota",
+      date: "Oct 2024 - Present",
+      location: "Woodbury, Minnesota",
       description: null,
       bullets: [
-        "Built scalable .NET Core APIs and designed optimized SQL and MongoDB database schemas.",
-        "Managed API deployments on IIS and Nginx servers.",
-        "Developed Blazor and React components and styled interfaces with Tailwind CSS.",
-        "Modernized legacy Visual Basic codebases through refactoring.",
-        "Implemented JWT - based authentication and authorization.",
-        "Automated internal workflows using Python scripts.",
-        "Utilized Docker for streamlined local development and production deployments.",
-        "Implemented logging and monitoring for .NET microservices.",
+        "Led the architectural rewrite of legacy VB.NET applications to a modern React, .NET, and PostgreSQL stack.",
+        "Architected secure RESTful APIs, integrated cloud storage buckets, and implemented Model Context Protocol (MCP) servers.",
+        "Authored comprehensive Agile/Scrum Jira tickets for sprint deliverables.",
+        "Built automated CI/CD pipelines, eliminating ~40 team hrs/week of manual testing and multi-environment deployments.",
+        "Managed internal application servers (Linux & Windows) to ensure high availability and continuous uptime.",
       ]
     },
     {
-      title: "Software Engineer Intern",
+      title: "Software Engineering Intern",
       company: "DMSi Software",
-      date: "Mar 2024 - Aug 2024",
-      location: "Minneapolis, Minnesota",
+      date: "Mar 2024 - Oct 2024",
+      location: "Woodbury, Minnesota",
       description: null,
       bullets: [
-        "Developed REST APIs for seamless integration with third - party ERP systems.",
-        "Conducted robust unit and integration testing with XUnit.",
-        "Established CI/ CD pipelines for automated testing and deployment using TFS and GitLab CI/ CD."
+        "Engineered critical order entry features to optimize transaction workflows.",
+        "Developed comprehensive logging and audit systems to improve application observability and troubleshooting capabilities.",
+        "Automated complex ETL workflows and built internal data management tooling using Python and SQL."
       ]
     },
     {
-      title: "Software Engineer Intern",
-      company: "4Human Co",
-      date: "Dec 2023 - Jun 2024",
+      title: "Software Engineering Intern",
+      company: "4Human (Charity Project)",
+      date: "Dec 2023 - Mar 2024",
       location: "Remote",
       description: null,
       bullets: [
-        "Built websites for human rights advocacy using React, Express.js, and AWS.",
-        "Designed and implemented a user- friendly UX / UI for an e- commerce site.",
-        "Developed reusable frontend components with React and Tailwind CSS.",
-        "Created and optimized backend endpoints using Express.js, Prisma ORM, and PostgreSQL.",
+        "Built a full-stack e-commerce platform for an African charity using React and Express.js.",
+        "Architected scalable backend infrastructure leveraging AWS S3, alongside managed SQL and NoSQL databases.",
       ]
     },
     {
@@ -125,15 +120,14 @@ export const Resume = {
       ]
     },
     {
-      title: "Technical Support Specialist / DP Team",
+      title: "Technical Support Specialist & Advisor",
       company: "BYU-Pathway Worldwide",
       date: "Aug 2021 - Sep 2022",
-      location: "Salt Lake City, Utah",
+      location: "Remote",
       description: null,
       bullets: [
-        "Built a Python web scraper, improving curriculum analysis efficiency by 10x.",
-        "Troubleshot semester planning software, enhancing system performance.",
-        "Partnered with Technical Support and Development teams to address system bugs efficiently.",
+        "Automated student curriculum extraction with Python, reducing manual analysis time by over 90%.",
+        "Collaborated with development teams to troubleshoot semester planning software and resolve core system bugs.",
       ]
     },
   ],
